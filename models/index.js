@@ -8,6 +8,8 @@ var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
 
+const axios = require("axios");
+
 if (config.use_env_variable) {
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
@@ -38,5 +40,22 @@ Object.keys(db).forEach(function(modelName) {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
+console.log("testing");
+function recipeApi() {
+  axios.get('https://api.spoonacular.com/recipes/search?apiKey=13a30efe431d4713aa2b0934b908feae')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+}
+recipeApi();
 
 module.exports = db;
