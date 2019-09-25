@@ -4,6 +4,8 @@ var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
+const axios = require("axios");
+
 // The API object contains methods for each kind of request we'll make
 var API = {
   saveExample: function(example) {
@@ -93,6 +95,22 @@ var handleDeleteBtnClick = function() {
     refreshExamples();
   });
 };
+console.log("testing");
+function recipeApi() {
+  axios.get('https://api.spoonacular.com/recipes/search?apiKey=13a30efe431d4713aa2b0934b908feae')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+}
+recipeApi();
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
