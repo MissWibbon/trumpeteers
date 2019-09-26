@@ -1,0 +1,46 @@
+{
+    "recipe_name": {
+        "title": "",
+        "cookingMinutes": "",
+        "ingredients": [
+            {"name": " ",
+            "quantity": ""},
+            {"name": " ",
+            "quantity": ""},
+            {"name": " ",
+            "quantity": ""}
+        ],
+        "instructions": [
+            "", 
+            "", 
+            "",
+            ""
+        ]
+        },
+        "recipe2_name": {
+            "title": "",
+            "cookingMinutes": "",
+            "ingredients": [
+                {
+                    "ingredientName": " ",
+                    "quantity": ""
+                },
+                {
+                    "ingredientName": " ",
+                    "quantity": ""
+                },
+                {
+                    "ingredientName": " ",
+                    "quantity": ""
+                }
+            ],
+            "instructions": [
+                "", 
+                "", 
+                "",
+                ""
+            ]
+            }
+    }
+
+}
