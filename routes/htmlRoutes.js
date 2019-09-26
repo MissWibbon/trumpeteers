@@ -11,6 +11,36 @@ module.exports = function(app) {
     });
   });
 
+  // Load Login page 
+  app.get("/login", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("login", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
+    // Start Game
+    app.get("/game", function(req, res) {
+      db.Example.findAll({}).then(function(dbExamples) {
+        res.render("game", {
+          msg: "Welcome!",
+          examples: dbExamples
+        });
+      });
+    });
+
+     // End of Game
+     app.get("/endgame", function(req, res) {
+      db.Example.findAll({}).then(function(dbExamples) {
+        res.render("game", {
+          msg: "Welcome!",
+          examples: dbExamples
+        });
+      });
+    });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {

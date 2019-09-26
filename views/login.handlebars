@@ -1,19 +1,69 @@
+<style>
+
+    body {
+        background-image: url('https://raw.githubusercontent.com/MissWibbon/trumpeteers/master/public/images/1562626362530.jpg'); 
+        background-size: cover; 
+        background-color: #1A1414; 
+        background-blend-mode: multiply;
+        padding-top: 15%;
+    }
+    .title {
+        display: inline-block;
+        font-size: 3em;
+    }
+    .kitchen {
+        color:#FF6724;
+        display: inline-block;
+    }
+    input {
+            background: transparent;
+    border: none;
+    border-bottom: 3px solid #F62323;
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .title {
+            font-size: 1em;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .title {
+            font-size: 1em !important;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .title {
+            font-size: 2em;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+              .title {
+            font-size: 3em;
+        }
+    }
+
+</style>
+
 <div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
+
+          <h1 class="title" style="color: #F62323; margin-left: 25%;">Welcome To Hell<span class="kitchen">'s Kitchen</span></h1>
+            <form style="padding-top: 20px; max-width: 400px; margin: auto;">
+            <input name="username" placeholder="username"></input>
+            <input name="password" placeholder="password" style="float: right;"></input>
+            </form>
             <a href="/">← Back To Home</a>
-        </div>
-      </div>
-    </div>
-  </div>
+            </form>
 </div>
+

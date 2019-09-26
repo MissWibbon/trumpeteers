@@ -79,15 +79,23 @@ function incorrectRecipeApi() {
   .then(function (response) {
     // handle success
     
-    //var results = response.data;
-    var incorrectRecipe = response.data.recipes[0].title;
+    var results = response.data;
+    // var incorrectRecipe = response.data.recipes[0].title;
     var incorrectIngredients = response.data.recipes[0].extendedIngredients;
-    var incorrectInstructions = response.data.recipes[0].instructions.split(".");
+    var incorrectInstructions = response.data.recipes[0].instructions;
+    // var incorrectInstructions = response.data.recipes[0].instructions.split(".");
 
 
-    console.log(incorrectRecipe);
-    console.log(incorrectInstructions);
-    console.log(incorrectIngredients);
+    console.log(results);
+    // console.log(incorrectRecipe);
+    console.log(`
+    Incorrect Instructions
+    ___________________________________________________________________
+    ${incorrectInstructions}
+    
+    ___________________________________________________________________
+    `);
+    // console.log(incorrectIngredients);
     
   })
   .catch(function (error) {
