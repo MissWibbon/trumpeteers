@@ -46,6 +46,7 @@ function recipeApi() {
   axios.get('https://api.spoonacular.com/recipes/random?apiKey=13a30efe431d4713aa2b0934b908feae')
   .then(function (response) {
     // handle success
+    
     var results = response.data;
     var recipe = response.data.recipes[0].title;
     var image = response.data.recipes[0].image;
@@ -62,6 +63,7 @@ function recipeApi() {
     console.log(ingredients);
     console.log(cookingDuration);
     console.log(results);
+    
   })
   .catch(function (error) {
     // handle error
@@ -72,5 +74,31 @@ function recipeApi() {
   });
 }
 recipeApi();
+
+function incorrectRecipeApi() {
+  axios.get('https://api.spoonacular.com/recipes/random?apiKey=13a30efe431d4713aa2b0934b908feae')
+  .then(function (response) {
+    // handle success
+    
+    var results = response.data;
+    var incorrectRecipe = response.data.recipes[0].title;
+    var incorrectIngredients = response.data.recipes[0].extendedIngredients;
+    var incorrectInstructions = response.data.recipes[0].instructions.split(".");
+
+
+    console.log(incorrectRecipe);
+    console.log(incorrectInstructions);
+    console.log(incorrectIngredients);
+    
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+}
+incorrectRecipeApi();
 
 module.exports = db;
