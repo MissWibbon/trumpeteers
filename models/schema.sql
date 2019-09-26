@@ -1,5 +1,11 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+CREATE DATABASE recipes_db;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+USE recipes_db;
+
+CREATE TABLE users (
+	id int(14) auto_increment PRIMARY KEY,
+    userName varchar(250) not null,
+    password varchar(250) not null,
+    wins int(100),
+    losses int(100)
+);
