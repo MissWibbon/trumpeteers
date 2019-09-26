@@ -52,13 +52,16 @@ function recipeApi() {
     var servings = response.data.recipes[0].servings;
     var ingredients = response.data.recipes[0].extendedIngredients;
     var instructions = response.data.recipes[0].instructions.split(".");
+    var cookingDuration = response.data.recipes[0].readyInMinutes;
+
 
     console.log(recipe);
     console.log(image);
     console.log(servings);
     console.log(instructions);
     console.log(ingredients);
-  //  console.log(results);
+    console.log(cookingDuration);
+    console.log(results);
   })
   .catch(function (error) {
     // handle error
