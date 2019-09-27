@@ -1,4 +1,5 @@
 // Get references to page elements
+console.log("page loaded");
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
@@ -99,3 +100,6 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+$(document).on("click", "loginsubmit", function(){
+  console.log("clicked log in");
+})

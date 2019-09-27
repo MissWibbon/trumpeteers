@@ -1,4 +1,5 @@
 var db = require("../models");
+var passport = require("passport");
 
 module.exports = function(app) {
   // Get all examples
@@ -14,7 +15,8 @@ module.exports = function(app) {
       res.json(dbExample);
     });
   });
-
+  //Create login route with Passport
+  app.post("/login", passport.authenticate())
   // Delete an example by id
   app.delete("/api/examples/:id", function(req, res) {
     db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
