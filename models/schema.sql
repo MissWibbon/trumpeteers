@@ -1,3 +1,6 @@
+--------------sorry this is confusing -- trying to figure out what works
+---- different versions separated by ---------------
+
 CREATE DATABASE recipes_db;
 
 DROP DATABASE IF EXISTS testdb;
@@ -21,18 +24,18 @@ CREATE TABLE IF NOT TABLE users (
     losses int(100)
 );
 
---
+--------------------------------
 CREATE USER [IF NOT EXISTS] account_name
 IDENTIFIED BY 'password';
 
---
+--------------------------
 CREATE TABLE users (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
---
+--------------------------
 
 DROP DATABASE IF EXISTS Users;
 CREATE DATABASE Users;
@@ -44,7 +47,7 @@ USE master;
 DROP DATABASE Users;
 DROP LOGIN Molly;
 
--- 
+-- ---------------------------------
 CREATE DATABASE [NewDatabase]
 GO
 CREATE LOGIN [NewLogin] WITH PASSWORD=N’test’, DEFAULT_DATABASE=[NewDatabase]
