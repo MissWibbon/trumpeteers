@@ -7,6 +7,9 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
+// user
+var sequelize = new Sequelize(config.database, config.username, config.password, config);
+
 
 const axios = require("axios");
 
@@ -40,6 +43,7 @@ Object.keys(db).forEach(function(modelName) {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 
 function recipeApi() {
   axios.get('https://api.spoonacular.com/recipes/random?apiKey=13a30efe431d4713aa2b0934b908feae')
