@@ -1,6 +1,6 @@
-{
-    "recipe_name": {
-        "title": "Rum Raisin Waffled French Toast ",
+[
+    {   
+        "recipe_name": "Rum Raisin Waffled French Toast",
         "image": "butter-sliced.jpg",
         "servingSize": "2",
         "cookingMinutes": "00:15",
@@ -26,8 +26,7 @@
         ],
         "totalPoints": "5"
     },
-    "recipe2_name": {
-        "title": "Spicy Salmon Roll ",
+    {   "recipe_name" : "Spicy Salmon Roll", 
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
         "servingSize": "1",
         "cookingMinutes": "00:15",
@@ -53,8 +52,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe3_name": {
-        "title": "Crown Maple Bourbon Glazed Short Ribs",
+    {
+        "recipe3_name": "Crown Maple Bourbon Glazed Short Ribs",
         "image": "https://spoonacular.com/recipeImages/492775-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:20",
@@ -80,8 +79,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe4_name": {
-        "title": "Olive Garden Chicken Scampi",
+    {
+        "recipe4_name": "Olive Garden Chicken Scampi",
         "image": "https://spoonacular.com/recipeImages/599547-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "02:00",
@@ -107,7 +106,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe5_name": {
+    { 
+        "recipe5_name":  
         "title": "Grilled Bacon Caramelized Onions",
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
@@ -536,4 +536,4 @@
         ],
         "totalPoints": "5"
     }
-}
+]
