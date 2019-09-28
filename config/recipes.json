@@ -3,7 +3,7 @@
         "title": "Rum Raisin Waffled French Toast ",
         "image": "butter-sliced.jpg",
         "servingSize": "2",
-        "cookingMinutes": "15",
+        "cookingMinutes": "00:15",
         "ingredients": [
             {
                 "name": "dark rum",
@@ -23,13 +23,14 @@
             "Dunk one slice of bread then flip and repeat",
             "Cook until the timer goes off",
             "Serve two slices of French toast on each plate"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe2_name": {
         "title": "Spicy Salmon Roll ",
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
         "servingSize": "1",
-        "cookingMinutes": "15",
+        "cookingMinutes": "00:15",
         "ingredients": [
             {
                 "name": "salmon",
@@ -49,13 +50,14 @@
             "Spread the sushi rice over the nori",
             "Place the salmon horizontally over the bottom",
             "Roll up tightly and cut into 4 pieces"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe3_name": {
         "title": "Crown Maple Bourbon Glazed Short Ribs",
         "image": "https://spoonacular.com/recipeImages/492775-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "120",
+        "cookingMinutes": "00:20",
         "ingredients": [
             {
                 "name": "beef short ribs",
@@ -75,13 +77,14 @@
             " Add bourbon and cook until liquid has reduced by half",
             "Cover pot with lid and place in a 275°F oven for 2 hours",
             "Pour maple glaze over the hot short ribs and serve immediately"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe4_name": {
         "title": "Olive Garden Chicken Scampi",
         "image": "https://spoonacular.com/recipeImages/599547-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "20",
+        "cookingMinutes": "02:00",
         "ingredients": [
             {
                 "name": "chicken tenders",
@@ -101,13 +104,14 @@
             "Return cooked vegetables to the pan and stir",
             "Cook for 5 to 7 minutes on each side until the chicken has browned on both sides",
             "Plate the pasta and sauce, placing a few pieces of cooked chicken with each plate."
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe5_name": {
         "title": "Grilled Bacon Caramelized Onions",
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "30",
+        "cookingMinutes": "00:30",
         "ingredients": [
             {
                 "name": "vidalia onions",
@@ -127,13 +131,14 @@
             "Add sugar and salt to onions and mix until evenly seasoned throughout",
             "Once bacon is ready, add onion to the pan and gently mix until onions are evenly coated",
             "Close the grill lid and cook until onions are nicely caramelized soft, and light brown in color"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe6_name": {
         "title": "Braised Pork Chops with Kale and Tomatoes",
         "image": "https://spoonacular.com/recipeImages/567822-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "35",
+        "cookingMinutes": "00:35",
         "ingredients": [
             {
                 "name": "pork chops",
@@ -153,13 +158,14 @@
             "Stir in tomatoes and kale",
             "Cover and cook in the preheated oven for 15 - 20 minutes or until pork chops are cooked through",
             "Transfer pork chops to a serving platter,Spoon the tomato mixture over the top and Serve"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe7_name": {
         "title": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
         "image": "ttps://spoonacular.com/recipeImages/471724-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "35",
+        "cookingMinutes": "00:35",
         "ingredients": [
             {
                 "name": "mahi mahi fillets",
@@ -179,13 +185,14 @@
             "Mix together white and black sesame seeds, and place in a plate or flat dish",
             "Pan sear fish for about 30 to 45 seconds per side",
             "Serve sesame crust side up with ginger butter sauce"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe8_name": {
         "title": "Carnitas",
         "image": "https://spoonacular.com/recipeImages/517399-556x370.jpg",
         "servingSize": "10",
-        "cookingMinutes": "380",
+        "cookingMinutes": "01:20",
         "ingredients": [
             {
                 "name": "corn tortillas",
@@ -205,13 +212,14 @@
             "Turn crock pot on HIGH for several hours (5-6), or cook on LOW for at least 8 hours",
             "Shred meat with two forks, discarding any fat that remains. Place in casserole dish and add reserved onions",
             "When ready to serve, place meat, tortillas and all condiments in bowls that can be self-served, either buffet style or on the table"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe9_name": {
         "title": "Sausage Stuffed Portobello Mushrooms",
         "image": "https://spoonacular.com/recipeImages/987442-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "30",
+        "cookingMinutes": "00:30",
         "ingredients": [
             {
                 "name": "ground sausage'",
@@ -231,13 +239,14 @@
             "Break the sausage into bits and cook for approximately 10-12 minutes, until the pork is browned and cooked through",
             "Scoop the sausage mixture into the mushrooms, filling them completely",
             "Allow the mushrooms to cool for a minute and then serve"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe10_name": {
         "title": "Loaded Mashed Potato Cakes",
         "image": "https://spoonacular.com/recipeImages/423290-556x370.jpg",
         "servingSize": "8",
-        "cookingMinutes": "55",
+        "cookingMinutes": "00:55",
         "ingredients": [
             {
                 "name": "potatoes",
@@ -256,13 +265,14 @@
             "Place bacon in a large skillet and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes', Drain the bacon slices on paper towels, reserving bacon grease in skillet; crumble bacon",
             "Melt butter in bacon grease over medium heat; cook and stir onion, celery, and garlic until tender and lightly browned, about 15 minutes'",
             "Drop spoonfuls of mashed potato mixture, flattening slightly, and fry patties until golden brown on both sides, 5 to 7 minutes, Serve with sour cream"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe11_name": {
         "title": "Aji Guacamole",
         "image": "https://spoonacular.com/recipeImages/474626-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "5",
+        "cookingMinutes": "00:05",
         "ingredients": [
             {
                 "name": "avocados",
@@ -281,13 +291,14 @@
             "Add all ingredients to a blender or food processor and process till smooth",
             "Add water as needed if it is too thick",
             "Eat on just about everything"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe12_name": {
         "title": "Turkey Burgers",
         "image": "https://spoonacular.com/recipeImages/664011-556x370.jpg'",
         "servingSize": "4",
-        "cookingMinutes": "45",
+        "cookingMinutes": "00:45",
         "ingredients": [
             {
                 "name": "ground turkey",
@@ -306,13 +317,14 @@
             "Mix all ingredients in a large bowl Don't overwork it just combine enough to have it well mixed",
             "Form 4-6 round patties Cook on med-high heat until done",
             "For roasted red pepper rings, seed and slice red pepper, spritz with olive oil and bake at 425 for 20 minutes"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe13_name": {
         "title": "Butter-Braised Carrots and Leeks",
         "image": "https://spoonacular.com/recipeImages/545911-556x370.jpeg",
         "servingSize": "8",
-        "cookingMinutes": "35",
+        "cookingMinutes": "00:35",
         "ingredients": [
             {
                 "name": "leeks",
@@ -332,13 +344,14 @@
             "Add the carrots, lemon zest, nutmeg, 1/2 teaspoon salt, 1/4 teaspoon pepper and 1/2 cup water",
             "Cover and continue cooking, stirring occasionally, until the carrots are tender, 15 to 20 more minutes",
             "Transfer the vegetables to a platter and top with the remaining herbs"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe14_name": {
         "title": "SPICY TURKISH TAPENADE",
         "image": "ttps://spoonacular.com/recipeImages/542186-556x370.jpg",
         "servingSize": "8",
-        "cookingMinutes": "15",
+        "cookingMinutes": "00:15",
         "ingredients": [
             {
                 "name": "walnut halves",
@@ -358,13 +371,14 @@
             "Add olives, garlic and spices (chili, cumin, coriander,oregano and sumac) to the bowl of the food processor and process for a few seconds until the olives and garlic are finely chopped",
             "Add oil and lemon juice and process for a few seconds more to combine",
             "Season to taste with salt and fresh ground black pepper Serve with crackers or toasted pit"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe15_name": {
         "title": "Tater Tot Taco Casserole",
         "image": "https://spoonacular.com/recipeImages/471778-556x370.jpg",
         "servingSize": "8",
-        "cookingMinutes": "70",
+        "cookingMinutes": "01:10",
         "ingredients": [
             {
                 "name": "ground beef",
@@ -384,13 +398,14 @@
             "Stir in taco seasoning and water, Reduce heat to low and simmer until sauce is reduced and thick, about 10 minutes'",
             "Bake in the oven until cheese is melted and the casserole is warmed through, about 10 minutes",
             "Remove from oven and top with 1/2 cup shredded Cheddar cheese. Serve atop shredded lettuce and garnished with sour cream"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe16_name": {
         "title": "Steak Fajitas",
         "image": "https://spoonacular.com/recipeImages/798724-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "25",
+        "cookingMinutes": "00:25",
         "ingredients": [
             {
                 "name": "steak",
@@ -410,7 +425,8 @@
             "Add the olive oil, lime juice, chili powder,ground cumin, cayenne pepper, salt, black pepper and garlic to a jar with a screw top or tight fitting lid",
             "When ready to cook, heat a large skillet over medium-high heat Pour the vegetables into the skillet and cook until just tender crisp, about 5 minutes",
             "When the steak is cooked throughout (about 7-10 minutes), add vegetables back to the skillet along with the reserved marinade Serve with warm tortillas and desired optional garnishes"
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe17_name": {
         "title": "",
@@ -436,7 +452,8 @@
             "",
             "",
             ""
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe18_name": {
         "title": "",
@@ -462,7 +479,8 @@
             "",
             "",
             ""
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe19_name": {
         "title": "",
@@ -488,7 +506,8 @@
             "",
             "",
             ""
-        ]
+        ],
+        "totalPoints": "5"
     },
     "recipe20_name": {
         "title": "",
@@ -514,6 +533,7 @@
             "",
             "",
             ""
-        ]
+        ],
+        "totalPoints": "5"
     }
 }
