@@ -53,7 +53,7 @@
         "totalPoints": "5"
     },
     {
-        "recipe3_name": "Crown Maple Bourbon Glazed Short Ribs",
+        "recipe_name": "Crown Maple Bourbon Glazed Short Ribs",
         "image": "https://spoonacular.com/recipeImages/492775-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:20",
@@ -80,7 +80,7 @@
         "totalPoints": "5"
     },
     {
-        "recipe4_name": "Olive Garden Chicken Scampi",
+        "recipe_name": "Olive Garden Chicken Scampi",
         "image": "https://spoonacular.com/recipeImages/599547-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "02:00",
@@ -107,8 +107,7 @@
         "totalPoints": "5"
     },
     { 
-        "recipe5_name":  
-        "title": "Grilled Bacon Caramelized Onions",
+        "recipe_name" : "Grilled Bacon Caramelized Onions",  
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:30",
@@ -134,8 +133,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe6_name": {
-        "title": "Braised Pork Chops with Kale and Tomatoes",
+    {
+        "recipe_name": "Braised Pork Chops with Kale and Tomatoes",
         "image": "https://spoonacular.com/recipeImages/567822-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:35",
@@ -161,8 +160,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe7_name": {
-        "title": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
+    {
+        "recipe_name": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
         "image": "ttps://spoonacular.com/recipeImages/471724-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:35",
@@ -188,8 +187,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe8_name": {
-        "title": "Carnitas",
+    {
+        "recipe_name": "Carnitas",
         "image": "https://spoonacular.com/recipeImages/517399-556x370.jpg",
         "servingSize": "10",
         "cookingMinutes": "01:20",
@@ -215,8 +214,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe9_name": {
-        "title": "Sausage Stuffed Portobello Mushrooms",
+    {
+        "recipe_name": "Sausage Stuffed Portobello Mushrooms",
         "image": "https://spoonacular.com/recipeImages/987442-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:30",
@@ -242,8 +241,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe10_name": {
-        "title": "Loaded Mashed Potato Cakes",
+    {
+        "recipe_name": "Loaded Mashed Potato Cakes",
         "image": "https://spoonacular.com/recipeImages/423290-556x370.jpg",
         "servingSize": "8",
         "cookingMinutes": "00:55",
@@ -268,8 +267,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe11_name": {
-        "title": "Aji Guacamole",
+    {
+        "recipe_name": "Aji Guacamole",
         "image": "https://spoonacular.com/recipeImages/474626-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:05",
@@ -294,8 +293,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe12_name": {
-        "title": "Turkey Burgers",
+    {
+        "recipe_name": "Turkey Burgers",
         "image": "https://spoonacular.com/recipeImages/664011-556x370.jpg'",
         "servingSize": "4",
         "cookingMinutes": "00:45",
@@ -320,8 +319,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe13_name": {
-        "title": "Butter-Braised Carrots and Leeks",
+    {
+        "recipe13_name": "Butter-Braised Carrots and Leeks",
         "image": "https://spoonacular.com/recipeImages/545911-556x370.jpeg",
         "servingSize": "8",
         "cookingMinutes": "00:35",
@@ -347,8 +346,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe14_name": {
-        "title": "SPICY TURKISH TAPENADE",
+    {
+        "recipe_name": "SPICY TURKISH TAPENADE",
         "image": "ttps://spoonacular.com/recipeImages/542186-556x370.jpg",
         "servingSize": "8",
         "cookingMinutes": "00:15",
@@ -374,8 +373,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe15_name": {
-        "title": "Tater Tot Taco Casserole",
+    {
+        "recipe_name": "Tater Tot Taco Casserole",
         "image": "https://spoonacular.com/recipeImages/471778-556x370.jpg",
         "servingSize": "8",
         "cookingMinutes": "01:10",
@@ -401,8 +400,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe16_name": {
-        "title": "Steak Fajitas",
+    {
+        "recipe_name": "Steak Fajitas",
         "image": "https://spoonacular.com/recipeImages/798724-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:25",
@@ -428,8 +427,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe17_name": {
-        "title": "",
+    {
+        "recipe_name": "",
         "image": "",
         "servingSize": "",
         "cookingMinutes": "00:00",
@@ -455,8 +454,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe18_name": {
-        "title": "",
+    {
+        "recipe_name": "",
         "image": "",
         "servingSize": "",
         "cookingMinutes": "00:00",
@@ -482,8 +481,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe19_name": {
-        "title": "",
+    {
+        "recipe_name": "",
         "image": "",
         "servingSize": "",
         "cookingMinutes": "00:00",
@@ -509,8 +508,8 @@
         ],
         "totalPoints": "5"
     },
-    "recipe20_name": {
-        "title": "",
+    {
+        "recipe_name": "",
         "image": "",
         "servingSize": "",
         "cookingMinutes": "00:00",

@@ -41,7 +41,7 @@ Object.keys(db).forEach(function(modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-function recipeApi() {
+/* function recipeApi() {
   axios.get('https://api.spoonacular.com/recipes/random?apiKey=13a30efe431d4713aa2b0934b908feae')
   .then(function (response) {
     // handle success
@@ -107,5 +107,5 @@ function incorrectRecipeApi() {
   });
 }
 incorrectRecipeApi();
-
+*/
 module.exports = db;
