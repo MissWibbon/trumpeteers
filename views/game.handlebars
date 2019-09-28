@@ -37,6 +37,23 @@
         background-color: #2E2929;
         color: #2E2929;
     }
+    button {
+        width: 100%;
+        margin: auto;
+        border: 3px solid #F62323;
+        color: #FF6724;
+        padding: 10px;
+        background: transparent;
+        margin-top: 30px;
+    }
+    .scoreTracker {
+        margin-top: 20px;
+        border: 3px solid #F62323;
+        padding: 10px;
+        background:#241F1F;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 </style>
 
   <div class="row" style="padding-top: 20px;">
@@ -88,6 +105,8 @@
         <div class="container">
             <div class="row">
                 <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
+                    
+                    <!--Ingredient Guesses-->
                     <h5>Ingredients</h5>
                     <div class="card mt-4">
                         <div class="card-body">
@@ -99,6 +118,8 @@
                             </ul>  
                         </div>
                     </div>
+                    
+                    <!--CookTime-->
                     <h5 style="margin-top: 20px;">Cooking Time:</h5>
                     <div class="card mt-4">
                         <div class="card-body">
@@ -107,8 +128,12 @@
                             </ul>  
                         </div>
                     </div>
+                    <!--QuiteGame-->
+                    <a href="/quit"><button>Quit Game</button></a>                       
                 </div>
                 <div class="col" style="width: 50%; padding-left: 5px; padding-right: 15px;">
+                    
+                    <!--Instructions Guess-->
                     <h5>Instructions</h5>
                     <div class="card mt-4">
                         <div class="card-body">
@@ -124,6 +149,14 @@
                             </ul>  
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row scoreTracker">
+                <div class="col">
+                    <p style="color:#F62323; margin-bottom: 0px; font-size: 20px;">Wins:</p>
+                </div>
+                <div class="col">
+                    <p style="color:#F62323; margin-bottom: 0px; font-size: 20px;">Losses:</p>
                 </div>
             </div>
     </div>

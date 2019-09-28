@@ -21,6 +21,16 @@ module.exports = function(app) {
     });
   });
 
+   // Load Quite page 
+   app.get("/quit", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("quit", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
     // Start Game
     app.get("/game", function(req, res) {
       db.Example.findAll({}).then(function(dbExamples) {
