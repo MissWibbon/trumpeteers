@@ -2,28 +2,162 @@
     body {
         background-color: #1A1414;
     }
+    h5 {
+        color:#FF6724;
+    }
+    h6 {
+        color: #FF6724; 
+        display: inline-block; 
+        font-weight: 100;
+    }
+    .card-body {
+        background-color: #241F1F;
+        border: none;
+    }
+    .card {
+        border: none;
+    }
+    
+    ul {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    li {
+        list-style: none;
+        color:#F62323;
+        font-weight:100;
+        margin-bottom: 5px;
+        padding-left: 5px;
+    }
+    .clicked {
+        color: #707070;
+    }
 
+    #notGuessed {
+        background-color: #2E2929;
+        color: #2E2929;
+    }
+    button {
+        width: 100%;
+        margin: auto;
+        border: 3px solid #F62323;
+        color: #FF6724;
+        padding: 10px;
+        background: transparent;
+        margin-top: 30px;
+    }
+    .scoreTracker {
+        margin-top: 20px;
+        border: 3px solid #F62323;
+        padding: 10px;
+        background:#241F1F;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 </style>
 
-  <div class="row">
+  <div class="row" style="padding-top: 20px;">
     <div class="col">
+        <div class="row">
         <div class="container">
-            <div class="card mt-4">
-                <div class="card-body">
-                    <h5 class="card-title">Example</h5>
-                    <p>
-                        <strong>ID</strong>: {{example.id}}</p>
-                    <p>
-                    <p>
-                        <strong>Text</strong>: {{example.text}}</p>
-                    <p>
-                        <strong>Description:</strong> {{example.description}}</p>
-                        <a href="/">← Back To Home</a>
+            <div class="col" style="width: 30%;">
+                <img id="recipe-img" style="display: inline-block; margin-right: 5px; height: 100px; width: 100%;">
+            </div>
+            <div class="col" style="width: 70%; display: inline-block; float: right; margin-top: -100px;">
+                <h6>Gordon has commanded that you make him a delicious plate of:</h6>
+                <h4 id="recipe-title" style="display: inline-block; color:#F62323;">Recipe Name</h4>
+                <h6 id="servings">For 2 people</h6>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="ingredients">
+                                <li>Ingredient</li>
+                                <li>Ingredient</li>
+                                <li>Ingredient</li>
+                                <li>Ingredient</li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 5px;">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="instructions">
+                                <li>Instructions</li>
+                                <li>Instructions</li>
+                                <li>Instructions</li>
+                                <li>Instructions</li>
+                            </ul>  
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
+    
     </div>
+
     <div class="col">
-        <div class="container"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
+                    
+                    <!--Ingredient Guesses-->
+                    <h5>Ingredients</h5>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="ingredients">
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                            </ul>  
+                        </div>
+                    </div>
+                    
+                    <!--CookTime-->
+                    <h5 style="margin-top: 20px;">Cooking Time:</h5>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="ingredients" style="margin-bottom: 0px;">
+                                <p id="cookTimeGuess" style="background-color: #2E2929; text-align: center; font-size: 35px; margin-bottom: 0px; font-weight:500; color:#F62323;">00:00</p>
+                            </ul>  
+                        </div>
+                    </div>
+                    <!--QuiteGame-->
+                    <a href="/quit"><button>Quit Game</button></a>                       
+                </div>
+                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 15px;">
+                    
+                    <!--Instructions Guess-->
+                    <h5>Instructions</h5>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="instructions">
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row scoreTracker">
+                <div class="col">
+                    <p style="color:#F62323; margin-bottom: 0px; font-size: 20px;">Wins:</p>
+                </div>
+                <div class="col">
+                    <p style="color:#F62323; margin-bottom: 0px; font-size: 20px;">Losses:</p>
+                </div>
+            </div>
     </div>
 </div>
