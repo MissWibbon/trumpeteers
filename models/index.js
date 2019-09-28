@@ -86,7 +86,7 @@ function incorrectRecipeApi() {
     // var incorrectInstructions = response.data.recipes[0].instructions.split(".");
 
 
-    // console.log(results);
+    console.log(results);
     // console.log(incorrectRecipe);
     console.log(`
     Incorrect Instructions
