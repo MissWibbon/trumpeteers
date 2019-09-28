@@ -1,5 +1,54 @@
+<style>
+  .bg-image {
+    background-image: url("https://raw.githubusercontent.com/MissWibbon/trumpeteers/master/public/images/GRArmsCrossed.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-color: rgb(26,20,20, 0.8); 
+    background-blend-mode: multiply;
+  }
+  .congrats {
+    background-color: #1A1414;
+  }
+  p, h3 {
+    color:#F62323;
+    padding-top: 10px;
+  }
+  .congrats {
+    padding-top: 40px;
+  }
+  
+  #getCooking {
+    border: 3px solid #F62323;
+    color:#FF6724;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;
+    font-weight: 500;
+  }
+</style>
+
 <div id="home">
-  <div class="container">
+
+    <div class="row" style="height: 585px;">
+      <div class="col bg-image">
+      </div>
+      <div class="col congrats">
+        <div class="container">
+          <h3>Congratulations!</h3>
+          <div class="gameInstructions">
+            <p>You have been given the opportunity to impress Gordon Ramsay with your cooking skills. A random recipe will be assigned to you.<br><br>
+            <span style="color: #FF6724;">- Select the correct ingredients,
+              <br>- guess the cooking duration, 
+              <br>- and rearange the instructions in the correct order to keep Gordon off your back.
+              <br><br> Don't disappoint Gordon, or you will regret it!</span></p>
+          </div>
+          <a href="/game"><button id="getCooking">Get Cooking!</button></a>
+        </div>
+      </div>
+    </div>
+
+  <!--<div class="container">
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
@@ -27,5 +76,5 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
