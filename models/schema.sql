@@ -1,6 +1,5 @@
 CREATE DATABASE recipes_db;
 
-<<<<<<< HEAD
 DROP DATABASE IF EXISTS testdb;
 CREATE DATABASE testdb;
 
@@ -12,7 +11,6 @@ CREATE TABLE users (
    password varchar(250) not null,
    wins int(100),
    losses int(100)
-=======
 USE recipes_db;
 
 CREATE TABLE IF NOT TABLE users (
@@ -21,5 +19,4 @@ CREATE TABLE IF NOT TABLE users (
     password varchar(250) not null,
     wins int(100),
     losses int(100)
->>>>>>> 5585b9072ea94966d84ab7db03b99d68a1777dff
 );
