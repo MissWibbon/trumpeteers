@@ -55,13 +55,13 @@ function recipeApi() {
     var cookingDuration = response.data.recipes[0].readyInMinutes;
 
 
-    console.log(recipe);
-    console.log(image);
-    console.log(servings);
-    console.log(instructions);
-    console.log(ingredients);
-    console.log(cookingDuration);
-    console.log(results);
+   console.log(recipe);
+   console.log(image);
+   console.log(servings);
+   console.log(instructions);
+   console.log(ingredients);
+   console.log(cookingDuration);
+   console.log(results);
     
   })
   .catch(function (error) {
@@ -86,7 +86,7 @@ function incorrectRecipeApi() {
     // var incorrectInstructions = response.data.recipes[0].instructions.split(".");
 
 
-    console.log(results);
+    //console.log(results);
     // console.log(incorrectRecipe);
     console.log(`
     Incorrect Instructions
