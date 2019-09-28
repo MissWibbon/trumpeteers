@@ -20,13 +20,23 @@
     
     ul {
         padding: 0px;
+        margin-bottom: 0px;
     }
     li {
         list-style: none;
         color:#F62323;
-        font-weight:100
+        font-weight:100;
+        margin-bottom: 5px;
+        padding-left: 5px;
+    }
+    .clicked {
+        color: #707070;
     }
 
+    #notGuessed {
+        background-color: #2E2929;
+        color: #2E2929;
+    }
 </style>
 
   <div class="row" style="padding-top: 20px;">
@@ -82,23 +92,35 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul class="ingredients">
-                                <li>Ingredient</li>
-                                <li>Ingredient</li>
-                                <li>Ingredient</li>
-                                <li>Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed">Ingredient</li>
+                            </ul>  
+                        </div>
+                    </div>
+                    <h5 style="margin-top: 20px;">Cooking Time:</h5>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <ul class="ingredients" style="margin-bottom: 0px;">
+                                <p id="cookTimeGuess" style="background-color: #2E2929; text-align: center; font-size: 35px; margin-bottom: 0px; font-weight:500; color:#F62323;">00:00</p>
                             </ul>  
                         </div>
                     </div>
                 </div>
-                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 5px;">
+                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 15px;">
                     <h5>Instructions</h5>
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul class="instructions">
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+                                <li id="notGuessed">Instructions</li>
+
                             </ul>  
                         </div>
                     </div>
