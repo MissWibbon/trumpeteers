@@ -40,7 +40,6 @@ module.exports = function(app) {
           return done(null, false, { message: 'Incorrect password.' });
         }
         return done(null, user);
-
       });
   
       // app.route('/login').post(
@@ -52,7 +51,7 @@ module.exports = function(app) {
         res.end()
       })
     }
-  
+
   
   ));
 
