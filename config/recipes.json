@@ -7,7 +7,7 @@
         "ingredients": [
             {
                 "name": "dark rum",
-                "quantity": "1 tablespoon dark rum"
+                "quantity": "1 tbsp dark rum"
             },
             {
                 "name": "whole wheat bread",
@@ -37,7 +37,7 @@
             },
             {
                 "name": "fish sauce",
-                "quantity": "1 teaspoon fish sauce"
+                "quantity": "1 tsp fish sauce"
             },
             {
                 "name": "nori",
@@ -176,7 +176,7 @@
             },
             {
                 "name": "fresh ginger root",
-                "quantity": "2 teaspoons minced fresh ginger root"
+                "quantity": "2 tsps minced fresh ginger root"
             }
         ],
         "instructions": [
@@ -335,12 +335,12 @@
             },
             {
                 "name": "unsalted butter",
-                "quantity": "5 tablespoons unsalted butter"
+                "quantity": "5 tbsp unsalted butter"
             }
         ],
         "instructions": [
-            "Melt the butter in a wide pot over medium heat Add the leeks and 1/4 teaspoon salt and toss to coat Cover and cook, stirring occasionally, until almost tender about 8 minutes",
-            "Add the carrots, lemon zest, nutmeg, 1/2 teaspoon salt, 1/4 teaspoon pepper and 1/2 cup water",
+            "Melt the butter in a wide pot over medium heat Add the leeks and 1/4 tsp salt and toss to coat Cover and cook, stirring occasionally, until almost tender about 8 minutes",
+            "Add the carrots, lemon zest, nutmeg, 1/2 tsp salt, 1/4 tsp pepper and 1/2 cup water",
             "Cover and continue cooking, stirring occasionally, until the carrots are tender, 15 to 20 more minutes",
             "Transfer the vegetables to a platter and top with the remaining herbs"
         ],
@@ -362,7 +362,7 @@
             },
             {
                 "name": "chili powder",
-                "quantity": "'¼ teaspoon Chili powder (Aleppo, if you have it)"
+                "quantity": "'¼ tsp Chili powder (Aleppo, if you have it)"
             }
         ],
         "instructions": [
