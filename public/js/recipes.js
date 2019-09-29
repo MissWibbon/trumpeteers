@@ -544,9 +544,13 @@ console.log(randomRecipe);
 
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
-console.log(recipeName);
-$("#recipe-title").innerHTML += recipeName;
+var recipeImg = randomRecipe.image;
 
+console.log(recipeName);
+console.log(recipeImg);
+$(".recipe-title").text(recipeName);
+$(".servings").text("For " + serveringSize + " people");
+$(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
 var context = {
     recipe: []
 };

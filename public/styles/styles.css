@@ -71,4 +71,5 @@ button {
   margin-right: 5px; 
   height: 100px; 
   width: 100%;
+  background-size: cover;
 }
