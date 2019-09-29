@@ -1,13 +1,13 @@
 var recipes =  [
         {   
         "recipe_name": "Rum Raisin Waffled French Toast",
-        "image": "butter-sliced.jpg",
+        "image": "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2014/02/Rum-Raisin-Waffled-French-Toast-by-DessertForTwo-on-February-11-2014-410x273.jpg",
         "servingSize": "2",
         "cookingMinutes": "00:15",
         "ingredients": [
             {
                 "name": "dark rum",
-                "quantity": "1 tablespoon dark rum"
+                "quantity": "1 tbsp dark rum"
             },
             {
                 "name": "whole wheat bread",
@@ -37,7 +37,7 @@ var recipes =  [
             },
             {
                 "name": "fish sauce",
-                "quantity": "1 teaspoon fish sauce"
+                "quantity": "1 tsp fish sauce"
             },
             {
                 "name": "nori",
@@ -162,7 +162,7 @@ var recipes =  [
     },
     {
         "recipe_name": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
-        "image": "ttps://spoonacular.com/recipeImages/471724-556x370.jpg",
+        "image": "https://spoonacular.com/recipeImages/471724-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:35",
         "ingredients": [
@@ -176,7 +176,7 @@ var recipes =  [
             },
             {
                 "name": "fresh ginger root",
-                "quantity": "2 teaspoons minced fresh ginger root"
+                "quantity": "2 tsps minced fresh ginger root"
             }
         ],
         "instructions": [
@@ -295,7 +295,7 @@ var recipes =  [
     },
     {
         "recipe_name": "Turkey Burgers",
-        "image": "https://spoonacular.com/recipeImages/664011-556x370.jpg'",
+        "image": "https://spoonacular.com/recipeImages/664011-556x370.jpg",
         "servingSize": "4",
         "cookingMinutes": "00:45",
         "ingredients": [
@@ -320,7 +320,7 @@ var recipes =  [
         "totalPoints": "5"
     },
     {
-        "recipe13_name": "Butter-Braised Carrots and Leeks",
+        "recipe_name": "Butter-Braised Carrots and Leeks",
         "image": "https://spoonacular.com/recipeImages/545911-556x370.jpeg",
         "servingSize": "8",
         "cookingMinutes": "00:35",
@@ -335,20 +335,20 @@ var recipes =  [
             },
             {
                 "name": "unsalted butter",
-                "quantity": "5 tablespoons unsalted butter"
+                "quantity": "5 tbsp unsalted butter"
             }
         ],
         "instructions": [
-            "Melt the butter in a wide pot over medium heat Add the leeks and 1/4 teaspoon salt and toss to coat Cover and cook, stirring occasionally, until almost tender about 8 minutes",
-            "Add the carrots, lemon zest, nutmeg, 1/2 teaspoon salt, 1/4 teaspoon pepper and 1/2 cup water",
+            "Melt the butter in a wide pot over medium heat Add the leeks and 1/4 tsp salt and toss to coat Cover and cook, stirring occasionally, until almost tender about 8 minutes",
+            "Add the carrots, lemon zest, nutmeg, 1/2 tsp salt, 1/4 tsp pepper and 1/2 cup water",
             "Cover and continue cooking, stirring occasionally, until the carrots are tender, 15 to 20 more minutes",
             "Transfer the vegetables to a platter and top with the remaining herbs"
         ],
         "totalPoints": "5"
     },
     {
-        "recipe_name": "SPICY TURKISH TAPENADE",
-        "image": "ttps://spoonacular.com/recipeImages/542186-556x370.jpg",
+        "recipe_name": "Spicy Turkish Tapenade",
+        "image": "https://spoonacular.com/recipeImages/542186-556x370.jpg",
         "servingSize": "8",
         "cookingMinutes": "00:15",
         "ingredients": [
@@ -362,7 +362,7 @@ var recipes =  [
             },
             {
                 "name": "chili powder",
-                "quantity": "'¼ teaspoon Chili powder (Aleppo, if you have it)"
+                "quantity": "'¼ tsp Chili powder (Aleppo, if you have it)"
             }
         ],
         "instructions": [
@@ -428,110 +428,255 @@ var recipes =  [
         "totalPoints": "5"
     },
     {
-        "recipe_name": "",
-        "image": "",
-        "servingSize": "",
-        "cookingMinutes": "00:00",
+        "recipe_name": "Baked Mac and Cheese",
+        "image": "https://images.media-allrecipes.com/userphotos/560x315/964194.jpg",
+        "servingSize": "3",
+        "cookingMinutes": "00:50",
         "ingredients": [
             {
-                "name": "",
-                "quantity": ""
+                "name": "12 ounce macaroni package",
+                "quantity": "1"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "eggs",
+                "quantity": "1"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "milk",
+                "quantity": "2 cups"
+            },
+            {
+                "name": "melted butter",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "shredded cheddar cheese",
+                "quantity": "2 1/2 cups"
             }
         ],
         "instructions": [
-            "",
-            "",
-            "",
-            ""
+            "Preheat the oven to 350 degrees F (175 degrees C)",
+            "Lightly grease a 2-quart baking dish",
+            "Lightly boil the macoroni in a large pot for 5 minutes until half cooked",
+            "Whisk the egg and milk together in a large cup",
+            "Add butter and cheese to the egg and milk.",
+            "Stir well",
+            "Place the lightly cooked macaroni in the prepared baking dish",
+            "Pour the egg and cheese liquid over the macoroni",
+            "Sprinkle with salt and pepper",
+            "Press the mixture evenly around the baking dish",
+            "Bake uncovered for 30-40 minutes until brown"
         ],
         "totalPoints": "5"
     },
     {
-        "recipe_name": "",
-        "image": "",
-        "servingSize": "",
-        "cookingMinutes": "00:00",
+        "recipe_name": "Pancakes",
+        "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/38/1474822198-how-to-make-pancakes.jpg",
+        "servingSize": "3",
+        "cookingMinutes": "00:20",
         "ingredients": [
             {
-                "name": "",
-                "quantity": ""
+                "name": "flour",
+                "quantity": "1 cup"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "sugar",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "baking powder",
+                "quantity": "2 1/2 tsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "1/2 tsp"
+            },
+            {
+                "name": "milk",
+                "quantity": "1 1/4 cup"
+            },
+            {
+                "name": "melted butter",
+                "quantity": "3 tbsp"
+            },
+            {
+                "name": "eggs",
+                "quantity": "1"
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "1 spray"
             }
         ],
         "instructions": [
-            "",
-            "",
-            "",
-            ""
+            "In large bowl, whisk flour, sugar, baking powder, and salt",
+            "Add milk, butter and, egg; stir until flour is moistened",
+            "Heat 12-inch nonstick skillet or griddle over medium heat until drop of water sizzles; brush lightly with oil",
+            "In batches, scoop batter by scant 1/4-cupfuls into skillet, spreading to 3 1/2 inches each",
+            "Cook 2 to 3 minutes or until bubbly and edges are dry",
+            "With wide spatula, turn; cook 2 minutes more or until golden",
+            "Transfer to platter or keep warm on a cookie sheet in 225°F oven",
+            "Repeat with remaining batter, brushing griddle with more oil if necessary"
         ],
         "totalPoints": "5"
     },
     {
-        "recipe_name": "",
-        "image": "",
-        "servingSize": "",
-        "cookingMinutes": "00:00",
+        "recipe_name": "Chicken Marsala",
+        "image": "https://www.mantitlement.com/wp-content/uploads/2019/01/easy-creamy-chicken-marsala-recipe-single.jpg",
+        "servingSize": "4",
+        "cookingMinutes": "00:30",
         "ingredients": [
             {
-                "name": "",
-                "quantity": ""
+                "name": "flour",
+                "quantity": "1/4 cup"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "salt",
+                "quantity": "1/2 tsp"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "ground black pepper",
+                "quantity": "1/4 tsp"
+            },
+            {
+                "name": "dried oregano",
+                "quantity": "1/2 tsp"
+            },
+            {
+                "name": "pounded, skinless, boneless chicken breast halves",
+                "quantity": "4"
+            },
+            {
+                "name": "butter",
+                "quantity": "4 tbsp"
+            },
+            {
+                "name": "olive oil",
+                "quantity": "4 tbsp"
+            },
+            {
+                "name": "sliced mushrooms",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "Marsala wine",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "cooking sherry",
+                "quantity": "1/4 cup"
             }
         ],
         "instructions": [
-            "",
-            "",
-            "",
-            ""
+            "In a shallow dish or bowl, mix together the flour, salt, pepper and oregano",
+            "Coat chicken pieces in flour mixture",
+            "In a large skillet, melt butter in oil over medium heat",
+            " Place chicken in the pan, and lightly brown",
+            "Turn over chicken pieces, and add mushrooms",
+            "Pour in wine and sherry",
+            "Cover skillet",
+            "simmer chicken 10 minutes",
+            "turn chicken over once until no longer pink"
+            
         ],
         "totalPoints": "5"
     },
     {
-        "recipe_name": "",
-        "image": "",
-        "servingSize": "",
-        "cookingMinutes": "00:00",
+        "recipe_name": "Thanksgiving Turkey and gravy",
+        "image": "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Marinated-Thanksgiving-Turkey_EXPS_THN17_1316_B06_15_5b.jpg",
+        "servingSize": "16",
+        "cookingMinutes": "04:55",
         "ingredients": [
             {
-                "name": "",
-                "quantity": ""
+                "name": "salt",
+                "quantity": "2 tbsp"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "ground black pepper",
+                "quantity": "1 tbsp"
             },
             {
-                "name": "",
-                "quantity": ""
+                "name": "12 lb whole turkey",
+                "quantity": "1"
+            },
+            {
+                "name": "coarsley chopped onions",
+                "quantity": "2"
+            },
+            {
+                "name": "coarsley chopped celery",
+                "quantity": "3"
+            },
+            {
+                "name": "coarsley chopped carrots",
+                "quantity": "2"
+            },
+            {
+                "name": "fresh rosemary",
+                "quantity": "3 sprigs"
+            },
+            {
+                "name": "fresh sage",
+                "quantity": "1/2 bunch"
+            },
+            {
+                "name": "butter",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "water",
+                "quantity": "6 cups"
+            },
+            {
+                "name": "poultry seasoning mix",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "turkey fat",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "bay leaf",
+                "quantity": "1"
+            },
+            {
+                "name": "balsamic vinegar",
+                "quantity": "1/4"
             }
         ],
         "instructions": [
-            "",
-            "",
-            "",
-            ""
+            "Preheat oven to 325 degrees F (165 degrees C)",
+            "Mix 2 tbsp salt, and 1 tbsp pepper, and poultry seasoning in a small bowl",
+            "Tuck turkey wings under the bird, and season cavity with about 1 tbsp of the poultry seasoning mixture",
+            "Reserve remaining poultry seasoning mix",
+            "Toss the onion, celery, and carrots together in a bowl",
+            "Stuff about 1/2 cup of the vegetable mixture, rosemary sprigs, and 1/2 bunch sage into the cavity of the turkey",
+            "Tie legs together with kitchen string",
+            "Loosen the skin on top of the turkey breast using fingers or a small spatula",
+            "Place about 2 tbsp butter under the skin and spread evenly",
+            "Spread the remaining butter (about 2 tbsp) all over the outside of the skin",
+            "Sprinkle the outside of the turkey with the remaining poultry seasoning mix",
+            "Spread the remaining onion, celery, and carrots into a large roasting pan",
+            "Place the turkey on top of the vegetables",
+            "Fill the pan with about 1/2 inch of water",
+            "Arrange a sheet of aluminum foil over the breast of the turkey",
+            "Roast the turkey in the preheated oven until no longer pink at the bone and the juices run clear, about 3 1/2 hours",
+            "An instant-read thermometer inserted into the thickest part of the thigh, near the bone should read 165 degrees F (75 degrees C)",
+            "Remove the foil during the last hour of cooking",
+            "Baste the turkey with the pan juices",
+            "While the turkey is roasting, make stock: place neck, heart, and gizzards in a saucepan with the bay leaf and water",
+            "Simmer over medium heat for 2 hours",
+            "Strain the turkey giblets from the stock, and discard giblets",
+            "Remove the turkey from the oven, cover with a doubled sheet of aluminum foil, and allow to rest in a warm area for 10 to 15 minutes before slicing",
+            "Pour the pan juices, about 3 cups, into a saucepan and set aside",
+            "Skim off the turkey fat from the pan juices, reserving about 2 tbsp",
+            "Heat 2 tbsp of the turkey fat and 1 tbsp butter in a saucepan over medium heat",
+            "Transfer the onion from the roasting pan into the skillet",
+            "Cook and stir until the onion is browned, about 5 minutes, then stir in the flour",
+            "Continue to cook and stir for about 5 minutes more; whisk in 4 cups of the skimmed turkey stock and the reserved pan juices until smooth; skim off any foam",
+            "Stir in the balsamic vinegar",
+            "Simmer until the gravy is thickened, whisking constantly, about 10 minutes",
+            "Stir in 1 tbsp of chopped sage, and season to taste with salt and black pepper"
         ],
         "totalPoints": "5"
     }
@@ -540,14 +685,18 @@ var recipes =  [
 
 var randomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
 
-console.log(randomRecipe);
+var incorrectRandomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+if (randomRecipe === incorrectRandomRecipe) {
+    var incorrectRandomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+}
+
+console.log(randomRecipe.recipe_name);
+console.log(incorrectRandomRecipe.recipe_name);
 
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
 
-console.log(recipeName);
-console.log(recipeImg);
 $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
