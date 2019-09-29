@@ -7,6 +7,9 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
+// user
+var sequelize = new Sequelize(config.database, config.username, config.password, config);
+
 
 const axios = require("axios");
 
@@ -55,13 +58,13 @@ db.Sequelize = Sequelize;
     var cookingDuration = response.data.recipes[0].readyInMinutes;
 
 
-    console.log(recipe);
-    console.log(image);
-    console.log(servings);
-    console.log(instructions);
-    console.log(ingredients);
-    console.log(cookingDuration);
-    console.log(results);
+   console.log(recipe);
+   console.log(image);
+   console.log(servings);
+   console.log(instructions);
+   console.log(ingredients);
+   console.log(cookingDuration);
+   console.log(results);
     
   })
   .catch(function (error) {
