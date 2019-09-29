@@ -68,7 +68,7 @@ button {
 }
 .recipe-img {
   display: inline-block; 
-  margin-right: 5px; 
+  margin-right: 0px; 
   height: 100px; 
   width: 100%;
   background-size: cover;

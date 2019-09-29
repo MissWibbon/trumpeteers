@@ -690,12 +690,15 @@ if (randomRecipe === incorrectRandomRecipe) {
     var incorrectRandomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
 }
 
-console.log(randomRecipe.recipe_name);
-console.log(incorrectRandomRecipe.recipe_name);
+console.log("correct recipe: " + randomRecipe.recipe_name);
+console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
+var ingredients = randomRecipe.ingredients;
+
+console.log(ingredients);
 
 $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
@@ -705,17 +708,6 @@ var context = {
 };
 
 
-function getRandom() {
-    var i = 2;
-    while (i-- && recipes.length >= 1) {
-        var random = Math.floor(Math.random() * recipes.length);
-        var data = recipes[random];
-        console.log(data);
-        context.recipe.push(data);
-        recipes.splice(random, 1);
-    }
-}
-console.log(getRandom());
 
 // var random = Math.floor(Math.random() * recipes.length);
 // var recipe = recipes[random];
