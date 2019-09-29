@@ -1,5 +1,4 @@
 var db = require("../models");
-var Recipes = require("../config/recipes.json");
 
 module.exports = function(app) {
   // Load index page

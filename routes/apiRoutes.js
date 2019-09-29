@@ -6,29 +6,6 @@ var recipes = require("../config/recipes.json");
 
 module.exports = function(app) {
 
-  // // Get all examples
-  // app.get("/api/examples", function(req, res) {
-  //   db.Example.findAll({}).then(function(dbExamples) {
-  //     res.json(dbExamples);
-  //   });
-  // });
-
-  // // Create a new example
-  // app.post("/api/examples", function(req, res) {
-  //   db.Example.create(req.body).then(function(dbExample) {
-  //     res.json(dbExample);
-  //   });
-  // });
-  // //Create login route with Passport
-  // // register?
-  
-  // // Delete an example by id
-  // app.delete("/api/examples/:id", function(req, res) {
-  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-  //     res.json(dbExample);
-  //   });
-  // });
-
   //PASSPORT????
   passport.use(new LocalStrategy(
     function(username, password, done) {
@@ -50,11 +27,42 @@ module.exports = function(app) {
       app.post("/login", function(req, res) {
         console.log(req.body)
         res.end()
-      })
+      });
     }
 
   
   ));
+  
+  //app.get('/game', function(req, res) {
+  //  res.json(recipes);
+  //})
+
+  // Recipes json route
+  app.get('/api/recipes', function(req, res) {
+    res.json(recipes);
+    function getRandomRecipe() {
+      var random = Math.floor(Math.random() * recipes.length);
+      return recipes[random];
+    }
+    getRandomRecipe();
+    
+    var recipeName = getRandomRecipe().recipe_name;
+    var recipeImage = getRandomRecipe().image;
+    var recipeServeSize = getRandomRecipe().servingSize;
+    var recipeCookTime = getRandomRecipe().cookingMinutes;
+    var recipePoints = getRandomRecipe().totalPoints;
+
+    console.log("recipe name " + recipeName);
+    console.log("recipe image " + recipeImage);
+    console.log("serving size " + recipeServeSize);
+    console.log("cook time " + recipeCookTime);
+    console.log("total points " + recipePoints);
+    
+    document.getElementById("recipe-title").innerHTML = recipeName.val();
+    
+    });
+
+
 
 };
 

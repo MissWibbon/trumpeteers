@@ -6,10 +6,6 @@
     "host": "a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
-  "production": {
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
-  },
   "test": {
  
     "username": "",
@@ -24,6 +20,10 @@
 
 },
 "production": {
+
+  "use_env_variable": "JAWSDB_URL",
+  
+  "dialect": "mysql",
  
   "username": "",
 
@@ -31,9 +31,7 @@
 
   "database": "",
 
-  "host": "127.0.0.1",
-
-  "dialect": "mysql"
+  "host": "127.0.0.1"
 
 }
 
