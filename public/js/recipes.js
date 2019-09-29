@@ -9,5 +9,4 @@ function getRandomRecipe() {
 }
 getRandomRecipe();
 
-var recipeName = getRandomRecipe().recipe_name;
 console.log(getRandomRecipe().recipe_name);
