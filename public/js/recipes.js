@@ -881,6 +881,60 @@ instructions.forEach(function(instruction){
 document.getElementById("instructions").innerHTML = instructionStr;
 
 
+// Drag instructions
+var isDnDTypeSupported = true;
+var dragStart = function(e) {
+    var index = $(e.target).index();
+
+    index += ''; // convert to string
+
+    try {
+        e.dataTransfer.setData('text/plain', index);
+    }
+    catch (ex) {
+        e.dataTransfer.setData('Text', index);
+        isDnDTypeSupported = false;
+    }
+};
+
+dropped = function(e) {
+    cancel(e);
+    var oldIndex;
+
+    if(isDnDTypeSupported) {
+        oldIndex = e.dataTransfer.getData('text/plain');
+    }else {
+        oldIndex = e.dataTransfer.getData('Text');
+    }
+
+    var target = $(e.target),
+    newIndex = target.index(),
+    dropped = $(this).parent().eq(oldIndex);
+
+    dropped.remove();
+
+    if (newIndex < oldIndex) {
+        target.before(dropped);
+    }else {
+        target.after(dropped);
+    }
+};
+
+cancel = function(e) {
+    if (e.preventDefault) {
+        
+    }
+}
+
+var item = document.querySelectorAll('.ingredient');
+
+    item.forEach(function(item) {
+        item.addEventListener('dragStart', dragStart, false);
+        item.addEventListener('drop', dropped, false);
+        item.addEventListener('dragenter', cancel, false);
+        item.addEventListener('dragover', cancel, false);
+    });
+
 // var random = Math.floor(Math.random() * recipes.length);
 // var recipe = recipes[random];
 // console.log(recipe.recipe_name);
