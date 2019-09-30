@@ -850,18 +850,16 @@ var instructions = randomRecipe.instructions;
 var instruction = instructions.map(function(instruction) {
     return instruction;
 })
-console.log(instruction);
 console.log(ingredients);
 console.log(incorrectIngredients);
 
-console.log(instructions);
 
 $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
 
 var ingredientStr = '<ul>'
-ingredients.forEach(function(ingredient){
+    ingredients.forEach(function(ingredient){
     ingredientStr += '<li>' + ingredient.name + '</li>';
     ingredientStr});
 var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngredient){
@@ -869,18 +867,18 @@ var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngr
     incorrectIngredientStr += '</ul>';
 
 });
-document.getElementById("ingredients").innerHTML = ingredientStr;
+console.log(incorrectIngredientStr);
+document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
 
 var instructionStr = '<ul>'
 instructions.forEach(function(instruction){
-    instructionStr += '<li>' + instruction + '</li>';
+    instructionStr += '<li class="instruction" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
     });
-    console.log(instructionStr);
-document.getElementById("instructions").innerHTML = instructionStr;
 
+document.getElementById("instructions").innerHTML = instructionStr;
 
 
 // var random = Math.floor(Math.random() * recipes.length);
