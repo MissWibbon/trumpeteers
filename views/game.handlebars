@@ -1,5 +1,5 @@
   <div class="row" style="padding-top: 20px;">
-    <div class="col" style="padding-right: 0px;">
+    <div class="col-8" style="padding-right: 0px;">
         <div class="row">
         <div class="container">
             <div class="col" style="width: 30%; padding-right: 0px;">
@@ -14,14 +14,14 @@
         </div>
         <div class="container" style="padding-right: 0px;">
             <div class="row">
-                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
+                <div class="col-4" style="padding-left: 15px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul id="ingredients"></ul>  
                         </div>
                     </div>
                 </div>
-                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 5px;">
+                <div class="col-8" style="padding-left: 5px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul id="instructions">
@@ -34,20 +34,8 @@
     
     </div>
 
-    <div class="col">
+    <div class="col-4">
         <div class="container">
-            <div class="row">
-                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
-                    
-                    <!--Ingredient Guesses-->
-                    <h5>Ingredients</h5>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <ul class="ingredients">
-                                <li id="notGuessed"></li>
-                            </ul>  
-                        </div>
-                    </div>
                     
                     <!--CookTime-->
                     <h5 style="margin-top: 20px;">Cooking Time:</h5>
@@ -60,20 +48,7 @@
                     </div>
                     <!--QuiteGame-->
                     <a href="/quit"><button>Quit Game</button></a>                       
-                </div>
-                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 15px;">
-                    
-                    <!--Instructions Guess-->
-                    <h5>Instructions</h5>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <ul class="instructions">
-                                <li id="notGuessed"></li>
-                            </ul>  
-                        </div>
-                    </div>
-                </div>
-            </div>
+                
             <div class="row scoreTracker">
                 <div class="col">
                     <p class="win-label">Wins: <div id="winPoints"></div></p>
@@ -84,6 +59,7 @@
             </div>
     </div>
 </div>
+  </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../handlebars-v4.3.1.js"></script>
 <script type="text/javascript" src="/js/recipes.js"></script>
