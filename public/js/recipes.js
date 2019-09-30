@@ -697,15 +697,39 @@ var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
 var ingredients = randomRecipe.ingredients;
+var incorrectIngredients = incorrectRandomRecipe.ingredients;
+var instructions = randomRecipe.instructions;
+
+
 
 console.log(ingredients);
+console.log(incorrectIngredients);
+
+console.log(instructions);
 
 $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
-var context = {
-    recipe: []
-};
+
+var ingredientStr = '<ul>'
+ingredients.forEach(function(ingredient){
+    ingredientStr += '<li>' + ingredient.name + '</li>';
+    ingredientStr});
+var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngredient){
+    incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
+    incorrectIngredientStr += '</ul>';
+
+});
+document.getElementById("ingredient").innerHTML = ingredientStr;
+
+
+
+var instructionStr = '<ul>'
+instructions.forEach(function(instruction){
+    instructionStr += '<li>' + instruction + '</li>';
+    });
+instructionStr += '</ul>';
+document.getElementsByClassName("instruction").innerHTML = instructionStr;
 
 
 
