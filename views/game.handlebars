@@ -17,22 +17,14 @@
                 <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
-                            <ul class="ingredients">
-                                <li id="ingredient"></li>
-                            </ul>  
+                            <ul id="ingredients"></ul>  
                         </div>
                     </div>
                 </div>
                 <div class="col" style="width: 50%; padding-left: 5px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
-                            <ul class="instructions">
-                                {{!-- <script id="instructions-template" type="text/x-handlbars-template">
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                </script> --}}
+                            <ul id="instructions">
                             </ul>  
                         </div>
                     </div>
@@ -52,10 +44,7 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul class="ingredients">
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
+                                <li id="notGuessed"></li>
                             </ul>  
                         </div>
                     </div>
@@ -79,14 +68,7 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <ul class="instructions">
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-
+                                <li id="notGuessed"></li>
                             </ul>  
                         </div>
                     </div>
@@ -94,10 +76,10 @@
             </div>
             <div class="row scoreTracker">
                 <div class="col">
-                    <p class="win-label">Wins:</p>
+                    <p class="win-label">Wins: <div id="winPoints"></div></p>
                 </div>
                 <div class="col">
-                    <p class="lose-label">Losses:</p>
+                    <p class="lose-label">Losses: <div id="losePoints"></div></p>
                 </div>
             </div>
     </div>

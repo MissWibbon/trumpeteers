@@ -41,14 +41,29 @@ var recipes =  [
             },
             {
                 "name": "nori",
-                "quantity": "1 sheet nori"
+                "quantity": "1 sheet"
+            },
+            {
+                "name": "mayonnaise",
+                "quantity": "1/4 cup"
+            },
+            {
+                "name": "cooked sushi rice",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "julienned scallions",
+                "quantity": "1"
             }
         ],
         "instructions": [
+            "In a small bowl, mix the mayonnaise, gochujang and fish sauce until thoroughly combined",
             "Lay down the nori",
             "Spread the sushi rice over the nori",
             "Place the salmon horizontally over the bottom",
-            "Roll up tightly and cut into 4 pieces"
+            "Top with some scallions",
+            "Roll up tightly and cut into 4 pieces",
+            "Garnish with the spicy mayo"
         ],
         "totalPoints": "5"
     },
@@ -56,7 +71,7 @@ var recipes =  [
         "recipe_name": "Crown Maple Bourbon Glazed Short Ribs",
         "image": "https://spoonacular.com/recipeImages/492775-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:20",
+        "cookingMinutes": "02:15",
         "ingredients": [
             {
                 "name": "beef short ribs",
@@ -69,12 +84,65 @@ var recipes =  [
             {
                 "name": "beef stock",
                 "quantity": "4 cups veal or beef stock"
+            },
+            {
+                "name": "kosher salt",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "ground pepper",
+                "quantity": "1 1/2 tsp"
+            },
+            {
+                "name": "diced onion",
+                "quantity": "1"
+            },
+            {
+                "name": "large diced carrot",
+                "quantity": "1"
+            },
+            {
+                "name": "large diced celery stick",
+                "quantity": "1"
+            },
+            {
+                "name": "large diced cremini mushrooms",
+                "quantity": "4"
+            },
+            {
+                "name": "tomato paste",
+                "quantity": "4 tbsp"
+            },
+            {
+                "name": "dry red wine",
+                "quantity": "3 ounces"
+            },
+            {
+                "name": "bay leaves",
+                "quantity": "2"
+            },
+            {
+                "name": "dried thyme",
+                "quantity": "1/2 tsp"
+            },
+            {
+                "name": "Crown Maple Extra Dark",
+                "quantity": "1/4 cup"
             }
         ],
         "instructions": [
             "Rub salt and pepper evenly over short ribs",
-            " Add bourbon and cook until liquid has reduced by half",
+            "Sear short ribs with vegetable oil over medium-high heat around all edges in a stockpot or cast-iron pot",
+            "Remove short ribs from pan, reduce heat and sauté diced onion, carrots and mushrooms until soft and tender",
+            "Add tomato paste and cook for 1-2 minutes until a sweet aroma develops",
+            "Add wine and bourbon and cook until liquid has reduced by half",
+            "Add the veal stock, place the ribs back in and bring back to a simmer",
             "Cover pot with lid and place in a 275°F oven for 2 hours",
+            "carefully add bay leaves and thyme",
+            "Cook for 1 additional hour or until meat is tender that a fork easily shreds the meat",
+            "Remove short ribs rom the pot",
+            "Add Crown Maple Extra Dark and bourbon to the sauce and simmer until sauce thickens",
+            "Taste glaze and add seasoning as needed",
             "Pour maple glaze over the hot short ribs and serve immediately"
         ],
         "totalPoints": "5"
@@ -375,7 +443,7 @@ var recipes =  [
     },
     {
         "recipe_name": "Tater Tot Taco Casserole",
-        "image": "https://spoonacular.com/recipeImages/471778-556x370.jpg",
+        "image": "https://neighborfoodblog.com/wp-content/uploads/2019/04/taco-tater-tot-casserole-3.jpg",
         "servingSize": "8",
         "cookingMinutes": "01:10",
         "ingredients": [
@@ -385,12 +453,40 @@ var recipes =  [
             },
             {
                 "name": "taco seasoning",
-                "quantity": "'1 (1 ounce) packet taco seasoning"
+                "quantity": "1 (1 ounce) packet taco seasoning"
             },
             {
-                "name": "potato",
+                "name": "tater tots",
                 "quantity": "1 (16 ounce) package frozen bite-size potato nuggets"
-            }
+            },
+            {
+                "name": "diced sweet yellow onion",
+                "quantity": "1/2"
+            },
+            {
+                "name": "14 ounce can diced tomatoes and green chilies, drained",
+                "quantity": "1"
+            },
+            {
+                "name": "canned corn",
+                "quantity": "1"
+            },
+            {
+                "name": "sour cream",
+                "quantity": "1/2 cup"
+            },
+            {
+                "name": "shredded Mexican cheese blend",
+                "quantity": "1 1/2 cups"
+            },
+            {
+                "name": "avocados, pitted and chopped",
+                "quantity": "2"
+            },
+            {
+                "name": "cilantro",
+                "quantity": "bunch"
+            },
         ],
         "instructions": [
             "Place potato nuggets in the bottom of a glass baking dish Bake in the preheated oven until cooked through and crisp, about 20 minutes",
@@ -417,13 +513,64 @@ var recipes =  [
             {
                 "name": "garlic",
                 "quantity": "2 cloves garlic, minced"
+            },
+            {
+                "name": "sliced red pepper",
+                "quantity": "1"
+            },
+            {
+                "name": "sliced yellow pepper",
+                "quantity": "1"
+            },
+            {
+                "name": "sliced green pepper",
+                "quantity": "1"
+            },
+            {
+                "name": "sliced onion",
+                "quantity": "1"
+            },
+            {
+                "name": "olive oil",
+                "quantity": "3 tbsp"
+            },
+            {
+                "name": "lime juice",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "chili powder",
+                "quantity": "1/2 tsp"
+            },
+            {
+                "name": "ground cumin",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "cayenne pepper",
+                "quantity": "pinch"
+            },
+            {
+                "name": "kosher salt",
+                "quantity": "1/2 tsp"
+            },
+            {
+                "name": "ground black pepper",
+                "quantity": "1/2 tsp"
             }
         ],
         "instructions": [
             "Place the steak into a sealable bag",
+            "Place the peppers and onion into a separate sealable bag",
             "Add the olive oil, lime juice, chili powder,ground cumin, cayenne pepper, salt, black pepper and garlic to a jar with a screw top or tight fitting lid",
-            "When ready to cook, heat a large skillet over medium-high heat Pour the vegetables into the skillet and cook until just tender crisp, about 5 minutes",
-            "When the steak is cooked throughout (about 7-10 minutes), add vegetables back to the skillet along with the reserved marinade Serve with warm tortillas and desired optional garnishes"
+            "Shake until well combined",
+            "Pour 1/3 of the marinade over steak, 1/3 of marinade over vegetables and reserve the remaining marinade in the jar for using when cooking the steak fajitas",
+            "Seal the bags tightly and refrigerate for one hour to overnight",
+            "When ready to cook, heat a large skillet over medium-high heat",
+            "Pour the vegetables into the skillet and cook until just tender crisp, about 5 minutes",
+            "When the steak is cooked throughout (about 7-10 minutes), add vegetables back to the skillet along with the reserved marinade",
+            "Serve with warm tortillas and desired optional garnishes"
+            
         ],
         "totalPoints": "5"
     },
@@ -700,8 +847,10 @@ var ingredients = randomRecipe.ingredients;
 var incorrectIngredients = incorrectRandomRecipe.ingredients;
 var instructions = randomRecipe.instructions;
 
-
-
+var instruction = instructions.map(function(instruction) {
+    return instruction;
+})
+console.log(instruction);
 console.log(ingredients);
 console.log(incorrectIngredients);
 
@@ -720,16 +869,17 @@ var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngr
     incorrectIngredientStr += '</ul>';
 
 });
-document.getElementById("ingredient").innerHTML = ingredientStr;
+document.getElementById("ingredients").innerHTML = ingredientStr;
 
 
 
 var instructionStr = '<ul>'
 instructions.forEach(function(instruction){
     instructionStr += '<li>' + instruction + '</li>';
+    instructionStr += '</ul>';
     });
-instructionStr += '</ul>';
-document.getElementsByClassName("instruction").innerHTML = instructionStr;
+    console.log(instructionStr);
+document.getElementById("instruction").innerHTML = instructionStr;
 
 
 

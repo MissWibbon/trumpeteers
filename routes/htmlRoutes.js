@@ -19,7 +19,7 @@ module.exports = function(app) {
 
     // Start Game
     app.get("/game", function(req, res) {
-        res.render("game");
+        res.render("game", {ingredients , instructions});
       });
 
 
