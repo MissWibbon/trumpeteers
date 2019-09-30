@@ -879,7 +879,7 @@ instructions.forEach(function(instruction){
     instructionStr += '</ul>';
     });
     console.log(instructionStr);
-document.getElementById("instruction").innerHTML = instructionStr;
+document.getElementById("instructions").innerHTML = instructionStr;
 
 
 
