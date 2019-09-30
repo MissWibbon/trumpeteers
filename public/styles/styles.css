@@ -3,6 +3,7 @@
 }
 body {
   background-color: #1A1414;
+  padding-bottom: 20px;
 }
 h5 {
   color:#FF6724;
@@ -28,9 +29,11 @@ ul {
 li {
   list-style: none;
   color:#F62323;
-  font-weight:100;
+  font-weight:300;
   margin-bottom: 5px;
   padding-left: 5px;
+  background-color: #2E2929;
+
 }
 .clicked {
   color: #707070;
@@ -68,9 +71,10 @@ button {
 }
 .recipe-img {
   display: inline-block; 
-  margin-right: 5px; 
-  height: 100px; 
+  margin-right: 0px; 
+  min-height: 125px; 
   width: 100%;
   background-size: cover;
   background-position: 85%;
+  border: none;
 }

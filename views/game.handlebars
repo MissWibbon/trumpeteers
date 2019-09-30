@@ -1,40 +1,32 @@
   <div class="row" style="padding-top: 20px;">
-    <div class="col">
+    <div class="col-8" style="padding-right: 0px;">
         <div class="row">
         <div class="container">
-            <div class="col" style="width: 30%;">
+            <div class="col-4" style="padding-right: 0px;">
                 <img class="recipe-img"/>
             </div>
-            <div class="col" style="width: 70%; display: inline-block; float: right; margin-top: -100px;">
+            <div class="col-8" style="display: inline-block; float: right; margin-top: -100px;">
                 <h6>Gordon has commanded that you make him a delicious plate of:</h6>
                     <h4 class="recipe-title"></h4>
                     <h6 class="servings">For people</h6>
             </div>
         </div>
         </div>
-        <div class="container">
+        <div class="container" style="padding-right: 0px;">
             <div class="row">
-                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
+                <div class="col-4" style="padding-left: 15px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
-                            <ul class="ingredients">
-                            {{!-- <script id="ingredients-template" type="text/x-handlebars-template">
-                                <li>{{ingredients[0].name}}</li>
-                            </script> --}}
-                            </ul>  
+                    <h5>Ingredients</h5>
+                            <ul id="ingredients"></ul>  
                         </div>
                     </div>
                 </div>
-                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 5px;">
+                <div class="col-8" style="padding-left: 5px; padding-right: 5px;">
                     <div class="card mt-4">
                         <div class="card-body">
-                            <ul class="instructions">
-                                {{!-- <script id="instructions-template" type="text/x-handlbars-template">
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                <li>Instructions</li>
-                                </script> --}}
+                    <h5>Instructions</h5>
+                            <ul id="instructions">
                             </ul>  
                         </div>
                     </div>
@@ -44,66 +36,38 @@
     
     </div>
 
-    <div class="col">
+    <div class="col-4">
         <div class="container">
-            <div class="row">
-                <div class="col" style="width: 50%; padding-left: 15px; padding-right: 5px;">
-                    
-                    <!--Ingredient Guesses-->
-                    <h5>Ingredients</h5>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <ul class="ingredients">
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
-                                <li id="notGuessed">Ingredient</li>
-                            </ul>  
-                        </div>
-                    </div>
                     
                     <!--CookTime-->
                     <h5 style="margin-top: 20px;">Cooking Time:</h5>
                     <div class="card mt-4">
                         <div class="card-body">
-                            <ul class="ingredients" style="margin-bottom: 0px;">
-                                <p id="cookTimeGuess" style="background-color: #2E2929; text-align: center; font-size: 35px; margin-bottom: 0px; font-weight:500; color:#F62323;">00:00</p>
-                            </ul>  
+                            <p id="cookTimeGuess" style="background-color: #2E2929; text-align: center; font-size: 35px; margin-bottom: 0px; font-weight:500; color:#F62323;">00:00</p>
+                             
                         </div>
                     </div>
                     <!--QuiteGame-->
                     <a href="/quit"><button>Quit Game</button></a>                       
-                </div>
-                <div class="col" style="width: 50%; padding-left: 5px; padding-right: 15px;">
-                    
-                    <!--Instructions Guess-->
-                    <h5>Instructions</h5>
-                    <div class="card mt-4">
-                        <div class="card-body">
-                            <ul class="instructions">
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-                                <li id="notGuessed">Instructions</li>
-
-                            </ul>  
-                        </div>
-                    </div>
-                </div>
-            </div>
+                
             <div class="row scoreTracker">
                 <div class="col">
-                    <p class="win-label">Wins:</p>
+                    <p class="win-label">Wins: <div id="winPoints"></div></p>
                 </div>
                 <div class="col">
-                    <p class="lose-label">Losses:</p>
+                    <p class="lose-label">Losses: <div id="losePoints"></div></p>
                 </div>
             </div>
     </div>
 </div>
+<div class="loserImgContainer" style="position: fixed; margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    display: none;">
+    <div class="loserImage" style="margin-top: 30px; width: 500px; margin: auto; background-color: black; min-height: 400px;">
+    </div>
+</div>
+  </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../handlebars-v4.3.1.js"></script>
 <script type="text/javascript" src="/js/recipes.js"></script>
