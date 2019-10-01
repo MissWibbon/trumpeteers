@@ -1,23 +1,28 @@
 .list-group-item {
   line-height: 2.5;
 }
+
 body {
   background-color: #1A1414;
   padding-bottom: 20px;
 }
+
 h5 {
-  color:#FF6724;
+  color: #FF6724;
 }
+
 h6 {
-  color: #FF6724; 
-  display: inline-block; 
+  color: #FF6724;
+  display: inline-block;
   font-weight: 100;
 }
+
 .card-body {
   background-color: #241F1F;
   border: none;
   padding: 5px !important;
 }
+
 .card {
   border: none;
 }
@@ -26,15 +31,16 @@ ul {
   padding: 0px;
   margin-bottom: 0px;
 }
+
 li {
   list-style: none;
-  color:#F62323;
-  font-weight:300;
+  color: #F62323;
+  font-weight: 300;
   margin-bottom: 5px;
   padding-left: 5px;
   background-color: #2E2929;
-
 }
+
 .clicked {
   color: #707070;
 }
@@ -43,6 +49,7 @@ li {
   background-color: #2E2929;
   color: #2E2929;
 }
+
 button {
   width: 100%;
   margin: auto;
@@ -52,27 +59,31 @@ button {
   background: transparent;
   margin-top: 30px;
 }
+
 .scoreTracker {
   margin-top: 20px;
   border: 3px solid #F62323;
   padding: 10px;
-  background:#241F1F;
+  background: #241F1F;
   margin-right: 0px;
   margin-left: 0px;
 }
+
 .win-label, .lose-label {
-  color:#F62323; 
-  margin-bottom: 0px; 
+  color: #F62323;
+  margin-bottom: 0px;
   font-size: 20px;
 }
+
 .recipe-title {
-  display: inline-block; 
-  color:#F62323;
+  display: inline-block;
+  color: #F62323;
 }
+
 .recipe-img {
-  display: inline-block; 
-  margin-right: 0px; 
-  min-height: 125px; 
+  display: inline-block;
+  margin-right: 0px;
+  min-height: 125px;
   width: 100%;
   background-size: cover;
   background-position: 85%;
