@@ -930,13 +930,14 @@ var ingredientStr = '<ul>'
     ingredients.forEach(function(ingredient){
     ingredientStr += '<li>' + ingredient.name + '</li>';
     ingredientStr});
-var incorrectIngredientStr = '<ul>' 
+var incorrectIngredientStr = '<ul>'
     incorrectIngredients.forEach(function(incorrectIngredient){
     incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
 });
-
+console.log(incorrectIngredientStr);
+document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
 function randomizeArr(arr) {
@@ -952,12 +953,11 @@ function randomizeArr(arr) {
 }
 
 
-console.log(randomizeArr([1, 2, 3, 4, 5]));
+console.log(randomizeArr(ingredients));
 
-randomize(instructions);
 
 var instructionStr = '<ul>'
-instructions.forEach(function(instruction){
+    instructions.forEach(function(instruction){
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
     });
