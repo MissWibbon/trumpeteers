@@ -928,38 +928,36 @@ $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg + ")");
 
 var ingredientStr = '<ul>'
-ingredients.forEach(function (ingredient) {
-    ingredientStr += '<li>' + ingredient.name + '</li>';
-    ingredientStr
-});
-var incorrectIngredientStr = '<ul>'
-incorrectIngredients.forEach(function (incorrectIngredient) {
-    incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
+    ingredients.forEach(function(ingredient){
+    ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
+    ingredientStr +=
+    incorrectIngredients.forEach(function(incorrectIngredient){
+    incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
 });
-
+document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
 function randomizeArr(arr) {
-    const newArr = []
-    const copy = arr.map(item => item)
+    const newArr = [];
+    const copy = arr.map(item => item);
 
     while (copy.length > 0) {
-        const randomIndex = Math.floor(Math.random() * copy.length)
-        newArr.push(copy[randomIndex])
-        copy.splice(randomIndex, 1)
+        const randomIndex = Math.floor(Math.random() * copy.length);
+        newArr.push(copy[randomIndex]);
+        copy.splice(randomIndex, 1);
     }
-    return newArr
+    return newArr;
 }
 
 
-console.log(randomizeArr([1, 2, 3, 4, 5]));
+console.log(randomizeArr(ingredients));
 
-randomize(instructions);
 
 var instructionStr = '<ul>'
-instructions.forEach(function (instruction) {
+
+    instructions.forEach(function(instruction){
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
 });
