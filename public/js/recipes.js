@@ -914,6 +914,7 @@ var recipeImg = randomRecipe.image;
 var ingredients = randomRecipe.ingredients;
 var incorrectIngredients = incorrectRandomRecipe.ingredients;
 var instructions = randomRecipe.instructions;
+var time = randomRecipe.cookingMinutes;
 
 var instruction = instructions.map(function(instruction) {
     return instruction;
@@ -1002,6 +1003,9 @@ var item = document.querySelectorAll('.ingredient');
         item.addEventListener('dragenter', cancel, false);
         item.addEventListener('dragover', cancel, false);
     });
+
+    module.exports = time;
+
 
 // var random = Math.floor(Math.random() * recipes.length);
 // var recipe = recipes[random];
