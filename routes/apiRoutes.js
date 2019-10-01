@@ -4,7 +4,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var recipes = require("../config/recipes.json");
 
 
-module.exports = function(app) {
+module.exports = function (app) {
 
   //PASSPORT????
   // passport.use(new LocalStrategy(
@@ -19,7 +19,7 @@ module.exports = function(app) {
   //       }
   //       return done(null, user);
   //     });
-  
+
   //     // app.route('/login').post(
   //     //   passport.authenticate('local', { failureRedirect: '/' }), (req, res) => {
   //     //   res.redirect('/profile');
@@ -30,22 +30,22 @@ module.exports = function(app) {
   //     });
   //   }
 
-  
+
   // ));
-  
+
   //app.get('/game', function(req, res) {
   //  res.json(recipes);
   //})
 
   // Recipes json route
-  app.get('/api/recipes', function(req, res) {
+  app.get('/api/recipes', function (req, res) {
     res.json(recipes);
     function getRandomRecipe() {
       var random = Math.floor(Math.random() * recipes.length);
       return recipes[random];
     }
     getRandomRecipe();
-    
+
     var recipeName = getRandomRecipe().recipe_name;
     var recipeImage = getRandomRecipe().image;
     var recipeServeSize = getRandomRecipe().servingSize;
@@ -57,13 +57,12 @@ module.exports = function(app) {
     console.log("serving size " + recipeServeSize);
     console.log("cook time " + recipeCookTime);
     console.log("total points " + recipePoints);
-    
+
     document.getElementById("recipe-title").innerHTML = recipeName.val();
-    
-    });
+
+  });
 
 
 
 };
 
- 

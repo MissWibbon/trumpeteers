@@ -7,7 +7,7 @@ var recipe = require('.../config/recipes.json');
 
 // The API object contains methods for each kind of request we'll make
 var API = {
-  saveRecipe: function(example) {
+  saveRecipe: function (example) {
     return $.ajax({
       headers: {
         "Content-Type": "application/json"
@@ -17,7 +17,7 @@ var API = {
       data: JSON.stringify(example)
     });
   },
-  getRecipe: function() {
+  getRecipe: function () {
     return $.ajax({
       url: "api/recipes",
       type: "GET"
@@ -32,9 +32,9 @@ var API = {
 };
 
 // refreshExamples gets new examples from the db and repopulates the list
-var refreshRecipes = function() {
-  API.getRecipes().then(function(data) {
-    var $recipes = data.map(function(recipe) {
+var refreshRecipes = function () {
+  API.getRecipes().then(function (data) {
+    var $recipes = data.map(function (recipe) {
       var $a = $("<a>")
         .text(recipe.text)
         .attr("href", "/recipe/" + recipe.recipeName);
@@ -62,7 +62,7 @@ var refreshRecipes = function() {
 
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
-var handleFormSubmit = function(event) {
+var handleFormSubmit = function (event) {
   event.preventDefault();
 
   var recipe = {
@@ -75,7 +75,7 @@ var handleFormSubmit = function(event) {
     return;
   }
 
-  API.saveRecipe(recipe).then(function() {
+  API.saveRecipe(recipe).then(function () {
     refreshRecipes();
   });
 
@@ -99,6 +99,6 @@ var handleFormSubmit = function(event) {
 // Add event listeners to the submit and delete buttons
 //$submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
-$(document).on("click", "submitBtn",function() {
+$(document).on("click", "submitBtn", function () {
   alert("click");
 });
