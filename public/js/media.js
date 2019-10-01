@@ -1,14 +1,14 @@
 // { 'img': “public/images/” }
-var winArray = [
-   { 'img': 'public/images/GRaExcited.gif' },
-   { 'img': 'public/images/public/images/GRgordonGoat.jpg' },
-   { 'img': 'public/images/public/images/GRPeeringLeft.jpg' },
-   { 'img': 'public/images/public/images/GRSmilingOutside.png'}
+var winImages = [
+   { 'img': '/images/GRaExcited.gif' },
+   { 'img': '/images/GRgordonGoat.jpg' },
+   { 'img': '/images/GRPeeringLeft.jpg' },
+   { 'img': '/images/GRSmilingOutside.png'}
  ];
    function getRandomItem(arr) {
    return arr[Math.floor(Math.random() * arr.length)];
  }
- var loseArray = [
+ var loseImages = [
    { 'img': 'public/images/public/images/GRawHell.jpg'},
    { 'img': 'public/images/public/images/GRCryingMan.jpg' },
    { 'img': 'public/images/public/images/GRCutoffGirl.jpg' },

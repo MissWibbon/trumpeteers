@@ -1,13 +1,8 @@
-  <div class="loserImgContainer" style="display: none; width: 50%;
-    background-color: white;
-    margin-top: 30px;
-    position: fixed;
-    margin-left: 25%;
-    z-index: 9;
-    min-height: 300px;
-    border-radius: 10px;">
+      <script src="https://kit.fontawesome.com/ebc38b1b2c.js" crossorigin="anonymous"></script>
 
-        <button type="button" id="closeImg" class="btn btn-default" data-dismiss="modal" style="color:#2E2929;">Close</button>
+  <div class="loserImgContainer">
+
+        <i class="fas fa-times-circle" id="closeImg"></i>
 
     <div class="loserImage"></div>
 
@@ -27,7 +22,7 @@
             </div>
         </div>
         </div>
-        <div class="container" style="padding-right: 0px;">
+        <div class="container game" style="padding-right: 0px;">
             <div class="row">
                 <div class="col-4" style="padding-left: 15px; padding-right: 5px;">
                     <div class="card mt-4">
@@ -80,6 +75,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../handlebars-v4.3.1.js"></script>
 <script type="text/javascript" src="/js/recipes.js"></script>
+<script type="text/javascript" src="/js/media.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
  <script>
@@ -91,10 +87,15 @@ $(document).ready(function () {
 $(document).ready(function () {
     $(".incorrect-ingredient").on('click', function () {
         $(this).addClass('clickedWrong');
+        $('.game').addClass('gamePause');
+
+        //let styles = 'display: block, background-image:' + getRandomItem(winImages); 
+        //console.log(styles);
         $('.loserImgContainer').css('display', 'block');
+
+
     });
      $("#closeImg").on('click', function () {
-        $(this).addClass('clickedWrong');
         $('.loserImgContainer').css('display', 'none');
     });
 });
