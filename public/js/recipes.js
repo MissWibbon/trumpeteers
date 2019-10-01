@@ -862,19 +862,38 @@ var ingredientStr = '<ul>'
     ingredients.forEach(function(ingredient){
     ingredientStr += '<li>' + ingredient.name + '</li>';
     ingredientStr});
-var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngredient){
+var incorrectIngredientStr = '<ul>' 
+    incorrectIngredients.forEach(function(incorrectIngredient){
     incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
 });
-console.log(incorrectIngredientStr);
-document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
+
+function randomize(array) {
+    var randomArray = [];
+    
+    while (originalArray.length > 0) {
+        var originalArray = array.map(item => item);
+        console.log(originalArray);
+    
+        var num = Math.floor(Math.random()*originalArray.length);
+    
+        randomArray.push(originalArray[num]);
+        
+        originalArray.splice(num, 1);
+        console.log(randomArray);
+
+    }
+    return randomArray;
+}
+
+randomize(instructions);
 
 var instructionStr = '<ul>'
 instructions.forEach(function(instruction){
-    instructionStr += '<li class="instruction" draggable="true">' + instruction + '</li>';
+    instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
     });
 
@@ -922,11 +941,11 @@ dropped = function(e) {
 
 cancel = function(e) {
     if (e.preventDefault) {
-        
+
     }
 }
 
-var item = document.querySelectorAll('.ingredient');
+var item = document.querySelectorAll('.instruction');
 
     item.forEach(function(item) {
         item.addEventListener('dragStart', dragStart, false);
