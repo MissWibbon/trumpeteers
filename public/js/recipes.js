@@ -24,7 +24,8 @@ var recipes =  [
             "Cook until the timer goes off",
             "Serve two slices of French toast on each plate"
         ],
-        "totalPoints": "5"
+        // 3 points ingredients + 4 points instructions + 5 points cooking time =
+        "totalPoints": "12"
     },
     {   "recipe_name" : "Spicy Salmon Roll", 
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
@@ -65,7 +66,8 @@ var recipes =  [
             "Roll up tightly and cut into 4 pieces",
             "Garnish with the spicy mayo"
         ],
-        "totalPoints": "5"
+         // 6 points ingredients + 7 points instructions + 5 points cooking time =
+        "totalPoints": "18"
     },
     {
         "recipe_name": "Crown Maple Bourbon Glazed Short Ribs",
@@ -133,19 +135,22 @@ var recipes =  [
         "instructions": [
             "Rub salt and pepper evenly over short ribs",
             "Sear short ribs with vegetable oil over medium-high heat around all edges in a stockpot or cast-iron pot",
-            "Remove short ribs from pan, reduce heat and sauté diced onion, carrots and mushrooms until soft and tender",
+            "Remove short ribs from pan",
+            "reduce pan heat and sauté diced onion, carrots and mushrooms until soft and tender",
             "Add tomato paste and cook for 1-2 minutes until a sweet aroma develops",
             "Add wine and bourbon and cook until liquid has reduced by half",
-            "Add the veal stock, place the ribs back in and bring back to a simmer",
+            "Add the veal stock to pan",
+            "Place the ribs back in the pan and bring back to a simmer",
             "Cover pot with lid and place in a 275°F oven for 2 hours",
-            "carefully add bay leaves and thyme",
+            "Carefully add bay leaves and thyme",
             "Cook for 1 additional hour or until meat is tender that a fork easily shreds the meat",
             "Remove short ribs rom the pot",
             "Add Crown Maple Extra Dark and bourbon to the sauce and simmer until sauce thickens",
             "Taste glaze and add seasoning as needed",
             "Pour maple glaze over the hot short ribs and serve immediately"
         ],
-        "totalPoints": "5"
+         // 14 points ingredients + 15 points instructions + 5 points cooking time =
+        "totalPoints": "34"
     },
     {
         "recipe_name": "Olive Garden Chicken Scampi",
@@ -159,20 +164,21 @@ var recipes =  [
             },
             {
                 "name": "pasta",
-                "quantity": "1 pound pasta cooked "
+                "quantity": "1 pound pasta cooked"
             },
             {
                 "name": "heavy cream",
-                "quantity": "3/4 cup heavy cream'"
+                "quantity": "3/4 cup heavy cream"
             }
         ],
         "instructions": [
             "Place chicken in skillet",
-            "Return cooked vegetables to the pan and stir",
+            "Place cooked vegetables to the pan and stir",
             "Cook for 5 to 7 minutes on each side until the chicken has browned on both sides",
             "Plate the pasta and sauce, placing a few pieces of cooked chicken with each plate."
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 4 points instructions + 5 points cooking time =
+        "totalPoints": "12"
     },
     { 
         "recipe_name" : "Grilled Bacon Caramelized Onions",  
@@ -194,12 +200,16 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Once the pan is heated add bacon pieces and spread them evenly",
+            "Heat the pan",
+            "Add bacon pieces and spread them evenly",
             "Add sugar and salt to onions and mix until evenly seasoned throughout",
-            "Once bacon is ready, add onion to the pan and gently mix until onions are evenly coated",
-            "Close the grill lid and cook until onions are nicely caramelized soft, and light brown in color"
+            "Once bacon is ready, add onion to the pan",
+            "Gently mix until onions are evenly coated",
+            "Close the grill lid", 
+            "Cook until onions are nicely caramelized soft, and light brown in color"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        "totalPoints": "15"
     },
     {
         "recipe_name": "Braised Pork Chops with Kale and Tomatoes",
@@ -222,11 +232,14 @@ var recipes =  [
         ],
         "instructions": [
             "Preheat oven to 325 degrees",
+            "Place pork chops in oven safe dish",
             "Stir in tomatoes and kale",
             "Cover and cook in the preheated oven for 15 - 20 minutes or until pork chops are cooked through",
-            "Transfer pork chops to a serving platter,Spoon the tomato mixture over the top and Serve"
+            "Transfer pork chops to a serving platter", 
+            "Spoon the tomato mixture over the top and Serve"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        "totalPoints": "14"
     },
     {
         "recipe_name": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
@@ -248,12 +261,16 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "In a sauce pan over medium heat, combine shallots, ginger, lemon juice, and white wine",
-            "Mix together white and black sesame seeds, and place in a plate or flat dish",
+            "Place a sauce pan over medium heat",
+            "Add in shallots, ginger, lemon juice, and white wine",
+            "Mix together white and black sesame seeds",
+            "Place in a plate or flat dish",
+            "Coat one side of mahi mahi in mixture of seeds",
             "Pan sear fish for about 30 to 45 seconds per side",
             "Serve sesame crust side up with ginger butter sauce"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        "totalPoints": "15"
     },
     {
         "recipe_name": "Carnitas",
@@ -275,12 +292,16 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "In the morning, place the pork in the crock pot and cover mostly with water. Add onions, garlic, oregano, and cumin into the water and around pork",
+            "In the morning, place the pork in the crock pot and cover mostly with water",
+            "Add onions, garlic, oregano, and cumin into the water and around pork",
             "Turn crock pot on HIGH for several hours (5-6), or cook on LOW for at least 8 hours",
-            "Shred meat with two forks, discarding any fat that remains. Place in casserole dish and add reserved onions",
+            "Shred meat with two forks",
+            "discarding any fat that remains",
+            "Place in casserole dish and add reserved onions",
             "When ready to serve, place meat, tortillas and all condiments in bowls that can be self-served, either buffet style or on the table"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        "totalPoints": "15"
     },
     {
         "recipe_name": "Sausage Stuffed Portobello Mushrooms",
@@ -302,12 +323,15 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Preheat oven to 400 Fahrenheit and chop onions, peppers and sage as noted",
-            "Break the sausage into bits and cook for approximately 10-12 minutes, until the pork is browned and cooked through",
+            "Preheat oven to 400 Fahrenheit",
+            "Add chop onions, peppers and sage",
+            "Break the sausage into bits",
+            "Cook the sausage for approximately 10-12 minutes, until the pork is browned and cooked through",
             "Scoop the sausage mixture into the mushrooms, filling them completely",
             "Allow the mushrooms to cool for a minute and then serve"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        "totalPoints": "14"
     },
     {
         "recipe_name": "Loaded Mashed Potato Cakes",
@@ -329,11 +353,19 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Place bacon in a large skillet and cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes', Drain the bacon slices on paper towels, reserving bacon grease in skillet; crumble bacon",
-            "Melt butter in bacon grease over medium heat; cook and stir onion, celery, and garlic until tender and lightly browned, about 15 minutes'",
-            "Drop spoonfuls of mashed potato mixture, flattening slightly, and fry patties until golden brown on both sides, 5 to 7 minutes, Serve with sour cream"
+            "Place bacon in a large skillet",
+            "Cook over medium-high heat, turning occasionally, until evenly browned, about 10 minutes",
+            "Drain the bacon slices on paper towels",
+            "Reserve the bacon grease in skillet",
+            "Crumble the dry bacon",
+            "Melt butter in bacon grease over medium heat",
+            "cook and stir onion, celery, and garlic until tender and lightly browned, about 15 minutes",
+            "Drop spoonfuls of mashed potato mixture and flattening slightly",
+            "fry patties until golden brown on both sides, about 5 to 7 minutes",
+            "Serve with sour cream"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 10 points instructions + 5 points cooking time =
+        "totalPoints": "18"
     },
     {
         "recipe_name": "Aji Guacamole",
@@ -355,11 +387,15 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Add all ingredients to a blender or food processor and process till smooth",
-            "Add water as needed if it is too thick",
+            "Medium dice onions, avocado, and jalapenos",
+            "Add all ingredients to a blender or food processor",
+            "Process till smooth",
+            "Add water if it is too thick",
+            "Add salt and lime to taste",
             "Eat on just about everything"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        "totalPoints": "14"
     },
     {
         "recipe_name": "Turkey Burgers",
@@ -381,11 +417,15 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Mix all ingredients in a large bowl Don't overwork it just combine enough to have it well mixed",
-            "Form 4-6 round patties Cook on med-high heat until done",
-            "For roasted red pepper rings, seed and slice red pepper, spritz with olive oil and bake at 425 for 20 minutes"
+            "First for the red pepper rings, Seed and slice red pepper into rings",
+            "Spritz with olive oil and bake at 425 for 20 minutes",
+            "Second for the Turkey Burgers, Mix all ingredients in a large bowl",
+            "Don't overwork it just combine enough to have it well mixed",
+            "Form 4-6 round patties",
+            "Cook on med-high heat until done" 
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        "totalPoints": "14"
     },
     {
         "recipe_name": "Butter-Braised Carrots and Leeks",
@@ -407,12 +447,18 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Melt the butter in a wide pot over medium heat Add the leeks and 1/4 tsp salt and toss to coat Cover and cook, stirring occasionally, until almost tender about 8 minutes",
+            "Melt the butter in a wide pot over medium heat",
+            "Add the leeks and 1/4 tsp salt",
+            "Toss to coat, cover and cook",
+            "Stirring occasionally, until almost tender about 8 minutes",
             "Add the carrots, lemon zest, nutmeg, 1/2 tsp salt, 1/4 tsp pepper and 1/2 cup water",
-            "Cover and continue cooking, stirring occasionally, until the carrots are tender, 15 to 20 more minutes",
-            "Transfer the vegetables to a platter and top with the remaining herbs"
+            "Cover and continue cooking",
+            "Stirring occasionally until the carrots are tender, 15 to 20 more minutes",
+            "Transfer the vegetables to a platter",
+            "Top with the remaining herbs"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 9 points instructions + 5 points cooking time =
+        "totalPoints": "17"
     },
     {
         "recipe_name": "Spicy Turkish Tapenade",
@@ -434,12 +480,16 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Roughly chop the walnuts by giving them a few pulses in the food processor'",
-            "Add olives, garlic and spices (chili, cumin, coriander,oregano and sumac) to the bowl of the food processor and process for a few seconds until the olives and garlic are finely chopped",
-            "Add oil and lemon juice and process for a few seconds more to combine",
-            "Season to taste with salt and fresh ground black pepper Serve with crackers or toasted pit"
+            "Roughly chop the walnuts by giving them a few pulses in the food processor",
+            "Add olives, garlic and spices (chili, cumin, coriander,oregano and sumac) to the food processor",
+            "Process for a few seconds until the olives and garlic are finely chopped",
+            "Add oil and lemon juice",
+            "Process for a few seconds more to combine",
+            "Season to taste with salt and fresh ground black pepper",
+            "Serve with crackers or toasted pita"
         ],
-        "totalPoints": "5"
+         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        "totalPoints": "15"
     },
     {
         "recipe_name": "Tater Tot Taco Casserole",
@@ -489,12 +539,17 @@ var recipes =  [
             },
         ],
         "instructions": [
-            "Place potato nuggets in the bottom of a glass baking dish Bake in the preheated oven until cooked through and crisp, about 20 minutes",
-            "Stir in taco seasoning and water, Reduce heat to low and simmer until sauce is reduced and thick, about 10 minutes'",
+            "Place potato nuggets in the bottom of a glass baking dish",
+            "Bake in the preheated oven until cooked through and crisp, about 20 minutes",
+            "Stir in taco seasoning and water to pan",
+            "Reduce heat to low and simmer until sauce is reduced and thick, about 10 minutes'",
             "Bake in the oven until cheese is melted and the casserole is warmed through, about 10 minutes",
-            "Remove from oven and top with 1/2 cup shredded Cheddar cheese. Serve atop shredded lettuce and garnished with sour cream"
+            "Remove from oven",
+            "Top with 1/2 cup shredded cheddar cheese",
+            "Serve atop shredded lettuce and garnished with sour cream"
         ],
-        "totalPoints": "5"
+         // 10 points ingredients + 8 points instructions + 5 points cooking time =
+        "totalPoints": "23"
     },
     {
         "recipe_name": "Steak Fajitas",
@@ -562,17 +617,22 @@ var recipes =  [
         "instructions": [
             "Place the steak into a sealable bag",
             "Place the peppers and onion into a separate sealable bag",
-            "Add the olive oil, lime juice, chili powder,ground cumin, cayenne pepper, salt, black pepper and garlic to a jar with a screw top or tight fitting lid",
+            "Add the olive oil, lime juice, chili powder,ground cumin, cayenne pepper, salt, black pepper and garlic to a jar with a tight fitting lid",
             "Shake until well combined",
             "Pour 1/3 of the marinade over steak, 1/3 of marinade over vegetables and reserve the remaining marinade in the jar for using when cooking the steak fajitas",
             "Seal the bags tightly and refrigerate for one hour to overnight",
             "When ready to cook, heat a large skillet over medium-high heat",
-            "Pour the vegetables into the skillet and cook until just tender crisp, about 5 minutes",
-            "When the steak is cooked throughout (about 7-10 minutes), add vegetables back to the skillet along with the reserved marinade",
+            "Pour the vegetables into the skillet",
+            "Cook until just tender crisp, about 5 minutes",
+            "Remove vegetables from skillet",
+            "Add steak to skillet",
+            "Cook steak for 7-10 minutes",
+            "Add vegetables back to the skillet along with the reserved marinade",
             "Serve with warm tortillas and desired optional garnishes"
             
         ],
-        "totalPoints": "5"
+         // 14 points ingredients + 14 points instructions + 5 points cooking time =
+        "totalPoints": "33"
     },
     {
         "recipe_name": "Baked Mac and Cheese",
@@ -602,19 +662,20 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Preheat the oven to 350 degrees F (175 degrees C)",
+            "Preheat the oven to 350 degrees F",
             "Lightly grease a 2-quart baking dish",
-            "Lightly boil the macoroni in a large pot for 5 minutes until half cooked",
+            "Lightly boil the macaroni in a large pot for 5 minutes until half cooked",
             "Whisk the egg and milk together in a large cup",
-            "Add butter and cheese to the egg and milk.",
+            "Add butter and cheese to the egg and milk",
             "Stir well",
             "Place the lightly cooked macaroni in the prepared baking dish",
-            "Pour the egg and cheese liquid over the macoroni",
+            "Pour the egg and cheese liquid over the macaroni",
             "Sprinkle with salt and pepper",
             "Press the mixture evenly around the baking dish",
             "Bake uncovered for 30-40 minutes until brown"
         ],
-        "totalPoints": "5"
+         // 5 points ingredients + 11 points instructions + 5 points cooking time =
+        "totalPoints": "21"
     },
     {
         "recipe_name": "Pancakes",
@@ -657,15 +718,19 @@ var recipes =  [
         ],
         "instructions": [
             "In large bowl, whisk flour, sugar, baking powder, and salt",
-            "Add milk, butter and, egg; stir until flour is moistened",
-            "Heat 12-inch nonstick skillet or griddle over medium heat until drop of water sizzles; brush lightly with oil",
+            "Add milk, butter and, egg",
+            "Stir until flour is moistened",
+            "Heat 12-inch nonstick skillet or griddle over medium heat until drop of water sizzles",
+            "Brush pan lightly with oil",
             "In batches, scoop batter by scant 1/4-cupfuls into skillet, spreading to 3 1/2 inches each",
             "Cook 2 to 3 minutes or until bubbly and edges are dry",
-            "With wide spatula, turn; cook 2 minutes more or until golden",
+            "With wide spatula, flip the batter",
+            "Cook 2 minutes more or until golden",
             "Transfer to platter or keep warm on a cookie sheet in 225°F oven",
             "Repeat with remaining batter, brushing griddle with more oil if necessary"
         ],
-        "totalPoints": "5"
+         // 8 points ingredients + 11 points instructions + 5 points cooking time =
+        "totalPoints": "24"
     },
     {
         "recipe_name": "Chicken Marsala",
@@ -718,18 +783,19 @@ var recipes =  [
             "In a shallow dish or bowl, mix together the flour, salt, pepper and oregano",
             "Coat chicken pieces in flour mixture",
             "In a large skillet, melt butter in oil over medium heat",
-            " Place chicken in the pan, and lightly brown",
-            "Turn over chicken pieces, and add mushrooms",
-            "Pour in wine and sherry",
+            "Place chicken in the pan, and lightly brown",
+            "Turn over chicken pieces",
+            "Add mushrooms, wine and sherry",
             "Cover skillet",
-            "simmer chicken 10 minutes",
-            "turn chicken over once until no longer pink"
-            
+            "Simmer for 10 minutes",
+            "Turn chicken over half way through",
+            "Serve with your favorite pasta"
         ],
-        "totalPoints": "5"
+         // 10 points ingredients + 10 points instructions + 5 points cooking time =
+        "totalPoints": "25"
     },
     {
-        "recipe_name": "Thanksgiving Turkey and gravy",
+        "recipe_name": "Thanksgiving Turkey and Gravy",
         "image": "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Marinated-Thanksgiving-Turkey_EXPS_THN17_1316_B06_15_5b.jpg",
         "servingSize": "16",
         "cookingMinutes": "04:55",
@@ -792,9 +858,10 @@ var recipes =  [
             }
         ],
         "instructions": [
-            "Preheat oven to 325 degrees F (165 degrees C)",
+            "Preheat oven to 325 degrees F",
             "Mix 2 tbsp salt, and 1 tbsp pepper, and poultry seasoning in a small bowl",
-            "Tuck turkey wings under the bird, and season cavity with about 1 tbsp of the poultry seasoning mixture",
+            "Tuck turkey wings under the bird",
+            "Season cavity with about 1 tbsp of the poultry seasoning mixture",
             "Reserve remaining poultry seasoning mix",
             "Toss the onion, celery, and carrots together in a bowl",
             "Stuff about 1/2 cup of the vegetable mixture, rosemary sprigs, and 1/2 bunch sage into the cavity of the turkey",
@@ -807,8 +874,8 @@ var recipes =  [
             "Place the turkey on top of the vegetables",
             "Fill the pan with about 1/2 inch of water",
             "Arrange a sheet of aluminum foil over the breast of the turkey",
-            "Roast the turkey in the preheated oven until no longer pink at the bone and the juices run clear, about 3 1/2 hours",
-            "An instant-read thermometer inserted into the thickest part of the thigh, near the bone should read 165 degrees F (75 degrees C)",
+            "Roast the turkey in the preheated oven, about 3 1/2 hours",
+            "An instant-read thermometer inserted into the thickest part of the thigh, near the bone should read 165 degrees F",
             "Remove the foil during the last hour of cooking",
             "Baste the turkey with the pan juices",
             "While the turkey is roasting, make stock: place neck, heart, and gizzards in a saucepan with the bay leaf and water",
@@ -825,7 +892,8 @@ var recipes =  [
             "Simmer until the gravy is thickened, whisking constantly, about 10 minutes",
             "Stir in 1 tbsp of chopped sage, and season to taste with salt and black pepper"
         ],
-        "totalPoints": "5"
+         // 14 points ingredients + 33 points instructions + 5 points cooking time =
+        "totalPoints": "52"
     }
 ]
 ;
@@ -862,19 +930,35 @@ var ingredientStr = '<ul>'
     ingredients.forEach(function(ingredient){
     ingredientStr += '<li>' + ingredient.name + '</li>';
     ingredientStr});
-var incorrectIngredientStr = incorrectIngredients.forEach(function(incorrectIngredient){
+var incorrectIngredientStr = '<ul>' 
+    incorrectIngredients.forEach(function(incorrectIngredient){
     incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
 });
-console.log(incorrectIngredientStr);
-document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
+
+function randomizeArr(arr) {
+    const newArr = []
+    const copy = arr.map(item => item)
+
+    while (copy.length > 0) {
+        const randomIndex = Math.floor(Math.random() * copy.length)
+        newArr.push(copy[randomIndex])
+        copy.splice(randomIndex, 1)
+    }
+    return newArr
+}
+
+
+console.log(randomizeArr([1, 2, 3, 4, 5]));
+
+randomize(instructions);
 
 var instructionStr = '<ul>'
 instructions.forEach(function(instruction){
-    instructionStr += '<li class="instruction" draggable="true">' + instruction + '</li>';
+    instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
     });
 
@@ -922,11 +1006,11 @@ dropped = function(e) {
 
 cancel = function(e) {
     if (e.preventDefault) {
-        
+
     }
 }
 
-var item = document.querySelectorAll('.ingredient');
+var item = document.querySelectorAll('.instruction');
 
     item.forEach(function(item) {
         item.addEventListener('dragStart', dragStart, false);
