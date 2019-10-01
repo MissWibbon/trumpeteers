@@ -1,5 +1,5 @@
-var recipes =  [
-        {   
+var recipes = [
+    {
         "recipe_name": "Rum Raisin Waffled French Toast",
         "image": "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2014/02/Rum-Raisin-Waffled-French-Toast-by-DessertForTwo-on-February-11-2014-410x273.jpg",
         "servingSize": "2",
@@ -27,7 +27,8 @@ var recipes =  [
         // 3 points ingredients + 4 points instructions + 5 points cooking time =
         "totalPoints": "12"
     },
-    {   "recipe_name" : "Spicy Salmon Roll", 
+    {
+        "recipe_name": "Spicy Salmon Roll",
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
         "servingSize": "1",
         "cookingMinutes": "00:15",
@@ -66,7 +67,7 @@ var recipes =  [
             "Roll up tightly and cut into 4 pieces",
             "Garnish with the spicy mayo"
         ],
-         // 6 points ingredients + 7 points instructions + 5 points cooking time =
+        // 6 points ingredients + 7 points instructions + 5 points cooking time =
         "totalPoints": "18"
     },
     {
@@ -149,7 +150,7 @@ var recipes =  [
             "Taste glaze and add seasoning as needed",
             "Pour maple glaze over the hot short ribs and serve immediately"
         ],
-         // 14 points ingredients + 15 points instructions + 5 points cooking time =
+        // 14 points ingredients + 15 points instructions + 5 points cooking time =
         "totalPoints": "34"
     },
     {
@@ -177,11 +178,11 @@ var recipes =  [
             "Cook for 5 to 7 minutes on each side until the chicken has browned on both sides",
             "Plate the pasta and sauce, placing a few pieces of cooked chicken with each plate."
         ],
-         // 3 points ingredients + 4 points instructions + 5 points cooking time =
+        // 3 points ingredients + 4 points instructions + 5 points cooking time =
         "totalPoints": "12"
     },
-    { 
-        "recipe_name" : "Grilled Bacon Caramelized Onions",  
+    {
+        "recipe_name": "Grilled Bacon Caramelized Onions",
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:30",
@@ -205,10 +206,10 @@ var recipes =  [
             "Add sugar and salt to onions and mix until evenly seasoned throughout",
             "Once bacon is ready, add onion to the pan",
             "Gently mix until onions are evenly coated",
-            "Close the grill lid", 
+            "Close the grill lid",
             "Cook until onions are nicely caramelized soft, and light brown in color"
         ],
-         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        // 3 points ingredients + 7 points instructions + 5 points cooking time =
         "totalPoints": "15"
     },
     {
@@ -235,10 +236,10 @@ var recipes =  [
             "Place pork chops in oven safe dish",
             "Stir in tomatoes and kale",
             "Cover and cook in the preheated oven for 15 - 20 minutes or until pork chops are cooked through",
-            "Transfer pork chops to a serving platter", 
+            "Transfer pork chops to a serving platter",
             "Spoon the tomato mixture over the top and Serve"
         ],
-         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        // 3 points ingredients + 6 points instructions + 5 points cooking time =
         "totalPoints": "14"
     },
     {
@@ -269,7 +270,7 @@ var recipes =  [
             "Pan sear fish for about 30 to 45 seconds per side",
             "Serve sesame crust side up with ginger butter sauce"
         ],
-         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        // 3 points ingredients + 7 points instructions + 5 points cooking time =
         "totalPoints": "15"
     },
     {
@@ -300,7 +301,7 @@ var recipes =  [
             "Place in casserole dish and add reserved onions",
             "When ready to serve, place meat, tortillas and all condiments in bowls that can be self-served, either buffet style or on the table"
         ],
-         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        // 3 points ingredients + 7 points instructions + 5 points cooking time =
         "totalPoints": "15"
     },
     {
@@ -330,7 +331,7 @@ var recipes =  [
             "Scoop the sausage mixture into the mushrooms, filling them completely",
             "Allow the mushrooms to cool for a minute and then serve"
         ],
-         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        // 3 points ingredients + 6 points instructions + 5 points cooking time =
         "totalPoints": "14"
     },
     {
@@ -364,7 +365,7 @@ var recipes =  [
             "fry patties until golden brown on both sides, about 5 to 7 minutes",
             "Serve with sour cream"
         ],
-         // 3 points ingredients + 10 points instructions + 5 points cooking time =
+        // 3 points ingredients + 10 points instructions + 5 points cooking time =
         "totalPoints": "18"
     },
     {
@@ -394,7 +395,7 @@ var recipes =  [
             "Add salt and lime to taste",
             "Eat on just about everything"
         ],
-         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        // 3 points ingredients + 6 points instructions + 5 points cooking time =
         "totalPoints": "14"
     },
     {
@@ -422,9 +423,9 @@ var recipes =  [
             "Second for the Turkey Burgers, Mix all ingredients in a large bowl",
             "Don't overwork it just combine enough to have it well mixed",
             "Form 4-6 round patties",
-            "Cook on med-high heat until done" 
+            "Cook on med-high heat until done"
         ],
-         // 3 points ingredients + 6 points instructions + 5 points cooking time =
+        // 3 points ingredients + 6 points instructions + 5 points cooking time =
         "totalPoints": "14"
     },
     {
@@ -457,7 +458,7 @@ var recipes =  [
             "Transfer the vegetables to a platter",
             "Top with the remaining herbs"
         ],
-         // 3 points ingredients + 9 points instructions + 5 points cooking time =
+        // 3 points ingredients + 9 points instructions + 5 points cooking time =
         "totalPoints": "17"
     },
     {
@@ -488,7 +489,7 @@ var recipes =  [
             "Season to taste with salt and fresh ground black pepper",
             "Serve with crackers or toasted pita"
         ],
-         // 3 points ingredients + 7 points instructions + 5 points cooking time =
+        // 3 points ingredients + 7 points instructions + 5 points cooking time =
         "totalPoints": "15"
     },
     {
@@ -548,7 +549,7 @@ var recipes =  [
             "Top with 1/2 cup shredded cheddar cheese",
             "Serve atop shredded lettuce and garnished with sour cream"
         ],
-         // 10 points ingredients + 8 points instructions + 5 points cooking time =
+        // 10 points ingredients + 8 points instructions + 5 points cooking time =
         "totalPoints": "23"
     },
     {
@@ -629,9 +630,9 @@ var recipes =  [
             "Cook steak for 7-10 minutes",
             "Add vegetables back to the skillet along with the reserved marinade",
             "Serve with warm tortillas and desired optional garnishes"
-            
+
         ],
-         // 14 points ingredients + 14 points instructions + 5 points cooking time =
+        // 14 points ingredients + 14 points instructions + 5 points cooking time =
         "totalPoints": "33"
     },
     {
@@ -674,7 +675,7 @@ var recipes =  [
             "Press the mixture evenly around the baking dish",
             "Bake uncovered for 30-40 minutes until brown"
         ],
-         // 5 points ingredients + 11 points instructions + 5 points cooking time =
+        // 5 points ingredients + 11 points instructions + 5 points cooking time =
         "totalPoints": "21"
     },
     {
@@ -729,7 +730,7 @@ var recipes =  [
             "Transfer to platter or keep warm on a cookie sheet in 225°F oven",
             "Repeat with remaining batter, brushing griddle with more oil if necessary"
         ],
-         // 8 points ingredients + 11 points instructions + 5 points cooking time =
+        // 8 points ingredients + 11 points instructions + 5 points cooking time =
         "totalPoints": "24"
     },
     {
@@ -791,7 +792,7 @@ var recipes =  [
             "Turn chicken over half way through",
             "Serve with your favorite pasta"
         ],
-         // 10 points ingredients + 10 points instructions + 5 points cooking time =
+        // 10 points ingredients + 10 points instructions + 5 points cooking time =
         "totalPoints": "25"
     },
     {
@@ -892,17 +893,17 @@ var recipes =  [
             "Simmer until the gravy is thickened, whisking constantly, about 10 minutes",
             "Stir in 1 tbsp of chopped sage, and season to taste with salt and black pepper"
         ],
-         // 14 points ingredients + 33 points instructions + 5 points cooking time =
+        // 14 points ingredients + 33 points instructions + 5 points cooking time =
         "totalPoints": "52"
     }
 ]
-;
+    ;
 
-var randomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+var randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 
-var incorrectRandomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+var incorrectRandomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 if (randomRecipe === incorrectRandomRecipe) {
-    var incorrectRandomRecipe = recipes[Math.floor(Math.random()*recipes.length)];
+    var incorrectRandomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 }
 
 console.log("correct recipe: " + randomRecipe.recipe_name);
@@ -915,7 +916,7 @@ var ingredients = randomRecipe.ingredients;
 var incorrectIngredients = incorrectRandomRecipe.ingredients;
 var instructions = randomRecipe.instructions;
 
-var instruction = instructions.map(function(instruction) {
+var instruction = instructions.map(function (instruction) {
     return instruction;
 })
 console.log(ingredients);
@@ -924,14 +925,15 @@ console.log(incorrectIngredients);
 
 $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
-$(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
+$(".recipe-img").css("backgroundImage", "url(" + recipeImg + ")");
 
 var ingredientStr = '<ul>'
-    ingredients.forEach(function(ingredient){
+ingredients.forEach(function (ingredient) {
     ingredientStr += '<li>' + ingredient.name + '</li>';
-    ingredientStr});
-var incorrectIngredientStr = '<ul>' 
-    incorrectIngredients.forEach(function(incorrectIngredient){
+    ingredientStr
+});
+var incorrectIngredientStr = '<ul>'
+incorrectIngredients.forEach(function (incorrectIngredient) {
     incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
@@ -957,17 +959,17 @@ console.log(randomizeArr([1, 2, 3, 4, 5]));
 randomize(instructions);
 
 var instructionStr = '<ul>'
-instructions.forEach(function(instruction){
+instructions.forEach(function (instruction) {
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
-    });
+});
 
 document.getElementById("instructions").innerHTML = instructionStr;
 
 
 // Drag instructions
 var isDnDTypeSupported = true;
-var dragStart = function(e) {
+var dragStart = function (e) {
     var index = $(e.target).index();
 
     index += ''; // convert to string
@@ -981,30 +983,30 @@ var dragStart = function(e) {
     }
 };
 
-dropped = function(e) {
+dropped = function (e) {
     cancel(e);
     var oldIndex;
 
-    if(isDnDTypeSupported) {
+    if (isDnDTypeSupported) {
         oldIndex = e.dataTransfer.getData('text/plain');
-    }else {
+    } else {
         oldIndex = e.dataTransfer.getData('Text');
     }
 
     var target = $(e.target),
-    newIndex = target.index(),
-    dropped = $(this).parent().eq(oldIndex);
+        newIndex = target.index(),
+        dropped = $(this).parent().eq(oldIndex);
 
     dropped.remove();
 
     if (newIndex < oldIndex) {
         target.before(dropped);
-    }else {
+    } else {
         target.after(dropped);
     }
 };
 
-cancel = function(e) {
+cancel = function (e) {
     if (e.preventDefault) {
 
     }
@@ -1012,12 +1014,12 @@ cancel = function(e) {
 
 var item = document.querySelectorAll('.instruction');
 
-    item.forEach(function(item) {
-        item.addEventListener('dragStart', dragStart, false);
-        item.addEventListener('drop', dropped, false);
-        item.addEventListener('dragenter', cancel, false);
-        item.addEventListener('dragover', cancel, false);
-    });
+item.forEach(function (item) {
+    item.addEventListener('dragStart', dragStart, false);
+    item.addEventListener('drop', dropped, false);
+    item.addEventListener('dragenter', cancel, false);
+    item.addEventListener('dragover', cancel, false);
+});
 
 // var random = Math.floor(Math.random() * recipes.length);
 // var recipe = recipes[random];
@@ -1027,14 +1029,14 @@ var item = document.querySelectorAll('.instruction');
 //     var recipeTemplate = $("#recipe-template").html();
 
 //     var compiledRecipeTemplate = Handlebars.compile(recipeTemplate);
-  
+
 //     var ingredientsTemplate = $("#ingredients-template").html();
 
 //     var compiledIngredientsTemplate = Handlebars.compile(ingredientsTemplate);
-    
+
 //     var instructionsTemplate = $("#instructions-template").html();
 
 //     var compiledInstructionsTemplate = Handlebars.compile(instructionsTemplate);
-    
+
 //     console.log(compiledRecipeTemplate({recipeName: recipe_name}));
 // });
