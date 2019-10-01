@@ -871,23 +871,20 @@ var incorrectIngredientStr = '<ul>'
 
 
 
-function randomize(array) {
-    var randomArray = [];
-    
-    while (originalArray.length > 0) {
-        var originalArray = array.map(item => item);
-        console.log(originalArray);
-    
-        var num = Math.floor(Math.random()*originalArray.length);
-    
-        randomArray.push(originalArray[num]);
-        
-        originalArray.splice(num, 1);
-        console.log(randomArray);
+function randomizeArr(arr) {
+    const newArr = []
+    const copy = arr.map(item => item)
 
+    while (copy.length > 0) {
+        const randomIndex = Math.floor(Math.random() * copy.length)
+        newArr.push(copy[randomIndex])
+        copy.splice(randomIndex, 1)
     }
-    return randomArray;
+    return newArr
 }
+
+
+console.log(randomizeArr([1, 2, 3, 4, 5]));
 
 randomize(instructions);
 
