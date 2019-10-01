@@ -7,31 +7,31 @@ var recipes = require("../config/recipes.json");
 module.exports = function(app) {
 
   //PASSPORT????
-  passport.use(new LocalStrategy(
-    function(username, password, done) {
-      User.findOne({ username: username }, function (err, user) {
-        if (err) { return done(err); }
-        if (!user) {
-          return done(null, false, { message: 'Incorrect username.' });
-        }
-        if (!user.validPassword(password)) {
-          return done(null, false, { message: 'Incorrect password.' });
-        }
-        return done(null, user);
-      });
+  // passport.use(new LocalStrategy(
+  //   function(username, password, done) {
+  //     User.findOne({ username: username }, function (err, user) {
+  //       if (err) { return done(err); }
+  //       if (!user) {
+  //         return done(null, false, { message: 'Incorrect username.' });
+  //       }
+  //       if (!user.validPassword(password)) {
+  //         return done(null, false, { message: 'Incorrect password.' });
+  //       }
+  //       return done(null, user);
+  //     });
   
-      // app.route('/login').post(
-      //   passport.authenticate('local', { failureRedirect: '/' }), (req, res) => {
-      //   res.redirect('/profile');
-      // });
-      app.post("/login", function(req, res) {
-        console.log(req.body)
-        res.end()
-      });
-    }
+  //     // app.route('/login').post(
+  //     //   passport.authenticate('local', { failureRedirect: '/' }), (req, res) => {
+  //     //   res.redirect('/profile');
+  //     // });
+  //     app.post("/login", function(req, res) {
+  //       console.log(req.body)
+  //       res.end()
+  //     });
+  //   }
 
   
-  ));
+  // ));
   
   //app.get('/game', function(req, res) {
   //  res.json(recipes);
