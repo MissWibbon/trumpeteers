@@ -78,3 +78,13 @@ button {
   background-position: 85%;
   border: none;
 }
+
+.clickedRight {
+  background-color: green;
+  color: #1A1414;
+}
+
+.clickedWrong {
+  background-color: #F62323;
+  color: #1A1414;
+}

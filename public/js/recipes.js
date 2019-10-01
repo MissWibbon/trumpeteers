@@ -928,28 +928,27 @@ $(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
 
 var ingredientStr = '<ul>'
     ingredients.forEach(function(ingredient){
-    ingredientStr += '<li>' + ingredient.name + '</li>';
+    ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
     ingredientStr});
 var incorrectIngredientStr = '<ul>'
     incorrectIngredients.forEach(function(incorrectIngredient){
-    incorrectIngredientStr += '<li>' + incorrectIngredient.name + '</li>';
+    incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
 
 });
-console.log(incorrectIngredientStr);
 document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
 function randomizeArr(arr) {
-    const newArr = []
-    const copy = arr.map(item => item)
+    const newArr = [];
+    const copy = arr.map(item => item);
 
     while (copy.length > 0) {
-        const randomIndex = Math.floor(Math.random() * copy.length)
-        newArr.push(copy[randomIndex])
-        copy.splice(randomIndex, 1)
+        const randomIndex = Math.floor(Math.random() * copy.length);
+        newArr.push(copy[randomIndex]);
+        copy.splice(randomIndex, 1);
     }
-    return newArr
+    return newArr;
 }
 
 
