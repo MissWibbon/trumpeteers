@@ -1,30 +1,45 @@
 var time = require("./recipes.js")
 
 var timer = $("#cookTimeGuess").val().trim();
-var guesses = 5;
+var guessesLeft = 5;
+var score = {}
+
+   // Function that updates the score...
+   function updateScore() {
+    document.querySelector("#score").innerHTML = "Score: " + score;
+  }
 
 $("#cookTimeGuess").click(function() {
     alert("clicked");
     console.log(time.time);
-
+//psychic game
    // document.getElementById("cookTimeGuess").onclick = function(){ 
       //comparing string to string, instead of as integers
    // number guessed by user  
    var correct = time.time;
    var userGuess = document.getElementById("cookTimeGuess").value; 
-  
+
+   //submit on press enter
+   document.getElementById('cookTimeGuess').addEventListener('keypress', function(event) {
+    if (event.keyCode == 13) {
+        //event.preventDefault();
+        event.submit();
+    }
+  //
    if(correct == userGuess) 
    {     
-       alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
-               + guesses + " GUESS "); 
+       alert("CONGRATULATIONS!"); 
+       score++;
+       updateScore();
                // add points leftover from 5
    }
    else
    { 
-       guesses--; 
+       guessesLeft--; 
        alert("try again")
+       updateScore();
    }
-   if (guesses === 0)
+   if (guessesLeft === 0)
    {
        //points = 0
        // dont let input anymore
