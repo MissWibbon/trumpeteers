@@ -912,8 +912,16 @@ console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
-var ingredients = randomRecipe.ingredients;
-var incorrectIngredients = incorrectRandomRecipe.ingredients;
+var ingredients = randomRecipe.ingredients.sort(function () {
+    return 0.5 - Math.random()
+});
+var incorrectIngredients = incorrectRandomRecipe.ingredients.sort(function () {
+    return 0.5 - Math.random()
+});
+var allIngredients = ingredients.concat(incorrectIngredients).sort(function () {
+    return 0.5 - Math.random()
+});
+console.log("allingred" + allIngredients);
 var instructions = randomRecipe.instructions;
 
 var instruction = instructions.map(function (instruction) {
@@ -928,32 +936,11 @@ $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg + ")");
 
 var ingredientStr = '<ul>'
-    ingredients.forEach(function(ingredient){
+allIngredients.forEach(function(ingredient){
     ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
-    ingredientStr +=
-    incorrectIngredients.forEach(function(incorrectIngredient){
-    incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
-    incorrectIngredientStr += '</ul>';
-
+    ingredientStr += '</ul>';
 });
-document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
-
-
-function randomizeArr(arr) {
-    const newArr = [];
-    const copy = arr.map(item => item);
-
-    while (copy.length > 0) {
-        const randomIndex = Math.floor(Math.random() * copy.length);
-        newArr.push(copy[randomIndex]);
-        copy.splice(randomIndex, 1);
-    }
-    return newArr;
-}
-
-
-console.log(randomizeArr(ingredients));
-
+document.getElementById("ingredients").innerHTML = ingredientStr;
 
 var instructionStr = '<ul>'
 
