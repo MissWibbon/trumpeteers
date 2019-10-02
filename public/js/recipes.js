@@ -935,7 +935,6 @@ $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg + ")");
 
-<<<<<<< HEAD
 // randomize ingredients and instructions
 function randomizeArr(arr) {
     const newArr = [];
@@ -984,18 +983,6 @@ console.log(randomInstructions);
 
 var instructionStr = '<ul>'
     randomInstructions.forEach(function(instruction){
-=======
-var ingredientStr = '<ul>'
-allIngredients.forEach(function(ingredient){
-    ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
-    ingredientStr += '</ul>';
-});
-document.getElementById("ingredients").innerHTML = ingredientStr;
-
-var instructionStr = '<ul>'
-
-    instructions.forEach(function(instruction){
->>>>>>> 547d311334f614731fa3999ccfbc7ee1895db7d9
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
 });
