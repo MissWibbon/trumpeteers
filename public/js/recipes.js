@@ -897,7 +897,7 @@ var recipes = [
         "totalPoints": "52"
     }
 ]
-    ;
+;
 
 var randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 
@@ -931,7 +931,8 @@ $(".recipe-img").css("backgroundImage", "url(" + recipeImg + ")");
 var ingredientStr = '<ul>'
     ingredients.forEach(function(ingredient){
     ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
-    ingredientStr +=
+    ingredientStr += '</ul>';
+    })
     incorrectIngredients.forEach(function(incorrectIngredient){
     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
     incorrectIngredientStr += '</ul>';
