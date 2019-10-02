@@ -926,19 +926,7 @@ $(".recipe-title").text(recipeName);
 $(".servings").text("For " + serveringSize + " people");
 $(".recipe-img").css("backgroundImage", "url(" + recipeImg +")");
 
-var ingredientStr = '<ul>'
-    ingredients.forEach(function(ingredient){
-    ingredientStr += '<li class="correct-ingredient">' + ingredient.name + '</li>';
-    ingredientStr});
-var incorrectIngredientStr = '<ul>'
-    incorrectIngredients.forEach(function(incorrectIngredient){
-    incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
-    incorrectIngredientStr += '</ul>';
-
-});
-document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
-
-
+// randomize ingredients and instructions
 function randomizeArr(arr) {
     const newArr = [];
     const copy = arr.map(item => item);
@@ -952,11 +940,40 @@ function randomizeArr(arr) {
 }
 
 
-console.log(randomizeArr(ingredients));
 
+// var incorrectIngredientStr = '<ul>'
+//     incorrectIngredients.forEach(function(incorrectIngredient){
+//     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
+//     incorrectIngredientStr += '</ul>';
+
+// });
+document.getElementById("ingredients").innerHTML = ingredientStr;
+$( ".ingredient" ).click(function() {
+    var clickedIngredient = $(this).text();
+    console.log(clickedIngredient);
+    
+    if (clickedIngredient == ingredients[0].name)
+    $(this).addClass('correct-ingredient');
+    
+});
+var combinedIngredients = ingredients.concat(incorrectIngredients);
+
+var combinedIngredients = randomizeArr(combinedIngredients);
+var ingredientStr = '<ul>'
+    combinedIngredients.forEach(function(combinedIngredients){
+        var combinedIngredient = combinedIngredients.name;
+    ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
+    ingredientStr += '</ul>'});
+
+
+    document.getElementById("ingredients").innerHTML = ingredientStr;
+
+    console.log(instructions);
+var randomInstructions = randomizeArr(instructions);
+console.log(randomInstructions);
 
 var instructionStr = '<ul>'
-    instructions.forEach(function(instruction){
+    randomInstructions.forEach(function(instruction){
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
     });
