@@ -1,5 +1,5 @@
 [
-    {   
+    {
         "recipe_name": "Rum Raisin Waffled French Toast",
         "image": "butter-sliced.jpg",
         "servingSize": "2",
@@ -26,7 +26,8 @@
         ],
         "totalPoints": "5"
     },
-    {   "recipe_name" : "Spicy Salmon Roll", 
+    {
+        "recipe_name": "Spicy Salmon Roll",
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
         "servingSize": "1",
         "cookingMinutes": "00:15",
@@ -106,8 +107,8 @@
         ],
         "totalPoints": "5"
     },
-    { 
-        "recipe_name" : "Grilled Bacon Caramelized Onions",  
+    {
+        "recipe_name": "Grilled Bacon Caramelized Onions",
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
         "cookingMinutes": "00:30",
