@@ -912,8 +912,16 @@ console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
-var ingredients = randomRecipe.ingredients;
-var incorrectIngredients = incorrectRandomRecipe.ingredients;
+var ingredients = randomRecipe.ingredients.sort(function () {
+    return 0.5 - Math.random()
+});
+var incorrectIngredients = incorrectRandomRecipe.ingredients.sort(function () {
+    return 0.5 - Math.random()
+});
+var allIngredients = ingredients.concat(incorrectIngredients).sort(function () {
+    return 0.5 - Math.random()
+});
+console.log("allingred" + allIngredients);
 var instructions = randomRecipe.instructions;
 var time = randomRecipe.cookingMinutes;
 
@@ -941,6 +949,7 @@ var ingredientStr = '<ul>'
 document.getElementById("ingredients").innerHTML = ingredientStr + incorrectIngredientStr;
 
 
+// randomize ingredients and instructions
 function randomizeArr(arr) {
     const newArr = [];
     const copy = arr.map(item => item);
@@ -954,12 +963,40 @@ function randomizeArr(arr) {
 }
 
 
-console.log(randomizeArr(ingredients));
 
+// var incorrectIngredientStr = '<ul>'
+//     incorrectIngredients.forEach(function(incorrectIngredient){
+//     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
+//     incorrectIngredientStr += '</ul>';
+
+// });
+document.getElementById("ingredients").innerHTML = ingredientStr;
+$( ".ingredient" ).click(function() {
+    var clickedIngredient = $(this).text();
+    console.log(clickedIngredient);
+    
+    if (clickedIngredient == ingredients[0].name)
+    $(this).addClass('correct-ingredient');
+    
+});
+var combinedIngredients = ingredients.concat(incorrectIngredients);
+
+var combinedIngredients = randomizeArr(combinedIngredients);
+var ingredientStr = '<ul>'
+    combinedIngredients.forEach(function(combinedIngredients){
+        var combinedIngredient = combinedIngredients.name;
+    ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
+    ingredientStr += '</ul>'});
+
+
+    document.getElementById("ingredients").innerHTML = ingredientStr;
+
+    console.log(instructions);
+var randomInstructions = randomizeArr(instructions);
+console.log(randomInstructions);
 
 var instructionStr = '<ul>'
-
-    instructions.forEach(function(instruction){
+    randomInstructions.forEach(function(instruction){
     instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
 });
