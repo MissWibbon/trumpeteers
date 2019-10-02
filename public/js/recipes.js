@@ -921,7 +921,6 @@ var incorrectIngredients = incorrectRandomRecipe.ingredients.sort(function () {
 var allIngredients = ingredients.concat(incorrectIngredients).sort(function () {
     return 0.5 - Math.random()
 });
-console.log("allingred" + allIngredients);
 var instructions = randomRecipe.instructions;
 
 var instruction = instructions.map(function (instruction) {
@@ -977,9 +976,8 @@ var ingredientStr = '<ul>'
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
 
-    console.log(instructions);
+    // stores the collected ingredients randomly
 var randomInstructions = randomizeArr(instructions);
-console.log(randomInstructions);
 
 var instructionStr = '<ul>'
     randomInstructions.forEach(function(instruction){
