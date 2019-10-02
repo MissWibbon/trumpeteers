@@ -21,6 +21,8 @@ h6 {
   background-color: #241F1F;
   border: none;
   padding: 5px !important;
+  box-shadow: 5px 5px 8px #141010;
+
 }
 
 .card {
@@ -101,6 +103,11 @@ button {
   background-color: #F62323;
   color: #1A1414;
 }
+
+#winPoints, #losePoints {
+  color: #FF6724;
+}
+
 .ingredient {
   cursor: pointer;
 }
@@ -150,6 +157,8 @@ button {
     border-radius: 10px;
     background-size: cover;
     background-position: center;
+    box-shadow: 5px 5px 20px #1A1414;
+
 }
 
 .overlay {

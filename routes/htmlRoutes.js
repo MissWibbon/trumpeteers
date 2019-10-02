@@ -11,6 +11,12 @@ module.exports = function (app) {
     res.render("login");
   });
 
+    // Load Login page 
+    app.get("/register", function (req, res) {
+      res.render("register");
+    });
+  
+
   // Load Quite page 
   app.get("/quit", function (req, res) {
     res.render("quit");

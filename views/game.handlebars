@@ -16,7 +16,7 @@
                 <img class="recipe-img"/>
             </div>
             <div class="col-8" style="display: inline-block; float: right; margin-top: -100px;">
-                <h6>Gordon has commanded that you make him a delicious plate of:</h6>
+                <h6>Gordon has commanded that you make him a delicious plate of:</h6><br>
                     <h4 class="recipe-title"></h4>
                     <h6 class="servings">For people</h6>
             </div>
@@ -28,7 +28,7 @@
                     <div class="card mt-4">
                         <div class="card-body">
                     <h5>Ingredients</h5>
-                            <ul id="ingredients" style="overflow-y: scroll; height: 300px;">
+                            <ul id="ingredients" style="overflow-y: scroll; max-height: 300px;">
                                 <li class="ingredient"></li>
                                 <li class="incorrect-ingredient"></li>
                             </ul>  
@@ -39,7 +39,7 @@
                     <div class="card mt-4">
                         <div class="card-body instructions-wrapper" id="droppable">
                     <h5>Instructions</h5>
-                            <ul id="instructions" style="overflow-y: scroll; height: 300px;">
+                            <ul id="instructions" style="overflow-y: scroll; max-height: 300px;">
                             </ul>  
                         </div>
                     </div>
@@ -88,12 +88,83 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
  <script>
+     console.log(ingredients);
+
+     var wins = 0;
+     var losses = 0;
+    $('#winPoints').text(wins);
+    $('#losePoints').text(losses);
+
 $(document).ready(function () {
-    $(".correct-ingredient").on('click', function () {
-        $(this).addClass('clickedRight');
-    });
+     var ingredient = $('.ingredient');
+     $('.ingredient').on('click', function(){
+         var elem = $(this);
+         var clickedIngredient = $(this).text();
+         var foundCorrect = false;
+
+        checkValue(clickedIngredient, elem);
+
+          console.log(clickedIngredient)
+         function checkValue(value,arr){
+            var status = 'Not exist';
+            
+            var ingredientExist = ingredients.includes(clickedIngredient);
+            console.log(ingredientExist);
+            
+            $.each(ingredients, function( key, object){
+                if (foundCorrect === true) return false;
+                
+                console.log("output: " + object.name);
+                if (clickedIngredient === object.name) {
+                    console.log(this.name);
+                    elem.addClass('clickedRight');
+                    elem.removeClass('clickedWrong');
+                    //$(this).addClass('clickedRight');
+                    foundCorrect = true;
+                    //wins =+ wins + 1;
+                    console.log(wins);
+
+                }
+                else if (clickedIngredient !== object.name) {
+                    elem.addClass('clickedWrong');
+                    elem.addClass('clickedRight');
+                }
+            }.bind(this));
+            if (foundCorrect === true) {
+                wins = wins + 1;
+                $('#winPoints').text(wins);
+
+            } else {
+                losses = losses + 1;
+                $('#losePoints').text(losses);
+
+            }
+            console.log(this);
+
+            /*for(var i=0; i<arr.length; i++){
+                var name = arr[i].name;
+                if(name == value){
+                status = 'Exist';
+                
+            }
+                }*/
+               
+
+            return status;
+            console.log("Status returned: " + status)
+            }
+            /*if (status === "Exist") {
+                $(this).addClass('clickedRight');
+               // console.log(this);
+            } else { 
+                console.log(this);
+                console.log("Status in else: " + status);
+                $(this).addClass('clickedWrong');
+            }*/
+     });
+    
 });
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(".incorrect-ingredient").on('click', function () {
         $(this).addClass('clickedWrong');
         $('.game').addClass('gamePause');
@@ -109,6 +180,6 @@ $(document).ready(function () {
         $('.game').removeClass('gamePause');
 
     });
-});
+});*/
 
   </script>
