@@ -3,8 +3,10 @@
   <div class="loserImgContainer">
 
         <i class="fas fa-times-circle" id="closeImg"></i>
-
-    <div class="loserImage"></div>
+    <audio preload="auto">
+         <source id="loserAudio" src="" type="audio/m4a">
+    </audio>
+    <div class="loserImage"><img id="loserImg" style="width: 100%;"></div>
 
 </div>
   
@@ -54,12 +56,13 @@
         <div class="container">
                     
                     <!--CookTime-->
-                    <h5 style="margin-top: 20px;">Cooking Time:</h5>
+                    <h5 style="margin-top: 20px;">Cooking Time:</h5><div id="submitTime">Guess Time</div>
                     <div class="card mt-4">
-                        <div class="card-body">                            
-                              <input id= "cookTimeGuess" type= "text"  placeholder="00:00" pattern="\d" maxlength="4" style="background-color: #2E2929; text-align: 
-                            center; font-size: 35px; margin-bottom: 0px; font-weight:500; 
-                            color:#F62323;"></input> 
+                        <div class="card-body">
+                            <p id="cookTimeGuess">
+                                <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div><div id="minutes" class="timeClock">00</div>
+                            </p>
+                             
                         </div>
                     </div>
                     <!--QuiteGame-->
@@ -90,9 +93,21 @@
      var losses = 0;
     $('#winPoints').text(wins);
     $('#losePoints').text(losses);
+var loseImage;
+
 $(document).ready(function () {
      var ingredient = $('.ingredient');
+     
      $('.ingredient').on('click', function(){
+        var loseImage = getRandomItem(loseImages).img;
+        var loseAudio = getRandomAudio();
+        console.log(loseImage);
+        console.log(loseAudio);
+
+        document.querySelector('#loserImg').setAttribute('src', loseImage);
+        var audio = getRandomItem(loseAudio)
+        document.querySelector('#loserAudio').setAttribute('src', loseAudio);
+        var playAudio = $('#loserAudio');
          var elem = $(this);
          var clickedIngredient = $(this).text();
          var foundCorrect = false;
@@ -107,7 +122,6 @@ $(document).ready(function () {
             $.each(ingredients, function( key, object){
                 if (foundCorrect === true) return false;
                 
-                console.log("output: " + object.name);
                 if (clickedIngredient === object.name) {
                     console.log(this.name);
                     elem.addClass('clickedRight');
@@ -125,12 +139,16 @@ $(document).ready(function () {
                 else if (clickedIngredient !== object.name) {
                     elem.addClass('clickedWrong');
                     elem.addClass('clickedRight');
+                    elem.removeClass('clickedRight');
+
                 }
             }.bind(this));
             if (foundCorrect === true) {
                 wins = wins + 1;
                 $('#winPoints').text(wins);
             } else {
+                var audio = new Audio(loseAudio);
+                audio.play();
                 $('.loserImgContainer').css('display', 'block');
                 $('.game').addClass('gamePause');
                 losses = losses + 1;
