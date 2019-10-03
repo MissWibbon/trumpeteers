@@ -5,13 +5,18 @@
 // alert(val);
 //var time = require("./recipes.js");
 
-var correct = time.time;
+// var correctHour = cookHours;
+// var correctMinute = cookMinutes;
+var cookHours = randomRecipe.cookingHours;
+var cookMinutes = randomRecipe.cookingMinutes;
 //var timer = $("#cookTimeGuess").val().trim();
 var guessesLeft = 5;
 var wins = 0;
 var losses = 0;
 var userGuess = document.getElementById("cookTimeGuess").value; 
 
+console.log(cookHours);
+console.log(cookMinutes);
 
 //stopping user from inputting more information after they've guessed 5 times
 var stopInput = function() {
@@ -22,7 +27,7 @@ var stopInput = function() {
    function updateScore() {
     
   }
-
+//update with both inputs
 $("#cookTimeGuess").click(function(timeGuess) {
     alert("clicked");
     guessesLeft--;
