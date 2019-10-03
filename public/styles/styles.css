@@ -145,6 +145,24 @@ button {
 .button:hover {
   background: #06D85F;
 }
+#cookTimeGuess {
+  background-color: #2E2929; 
+  text-align: center; 
+  font-size: 35px; 
+  margin-bottom: 0px; 
+  font-weight:500; 
+  color:#F62323;
+}
+
+.timeClock {
+  display: inline-block;
+  margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #F62323;
+}
 
 .count {
   font-size: 10px; 
