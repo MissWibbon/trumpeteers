@@ -970,8 +970,6 @@ function randomizeArr(arr) {
     return newArr;
 }
 
-
-
 // var incorrectIngredientStr = '<ul>'
 //     incorrectIngredients.forEach(function(incorrectIngredient){
 //     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
@@ -981,20 +979,54 @@ function randomizeArr(arr) {
 document.getElementById("ingredients").innerHTML = ingredientStr;
 $( ".ingredient" ).click(function() {
     var clickedIngredient = $(this).text();
-    console.log(clickedIngredient);
+    //console.log(clickedIngredient);
     
     if (clickedIngredient == ingredients[0].name)
     $(this).addClass('correct-ingredient');
     
 });
+
 var combinedIngredients = ingredients.concat(incorrectIngredients);
 
 var combinedIngredients = randomizeArr(combinedIngredients);
+
+var allIngredientNames = [];
+for (let index = 0; index < combinedIngredients.length; index++) {
+    allIngredientNames.push(combinedIngredients[index].name);
+}
+
+allIngredientNames.forEach(function(ingName){
+    //console.log("item:" + ingName)
+})
+
+ var noDuplicateIngredients = new Set(allIngredientNames);
+ var backtoArray = [...noDuplicateIngredients];
+ //console.log("testing" + backtoArray);
+ //console.log("ingre" + noDuplicateIngredients);
+//  combinedIngredients.filter(); {
+//      console.log(item, index, array.indexOf(item), array.indexOf(item) === index);
+//  };
+
+//  var noDuplicates = function() {
+//      if (combinedIngredients = ingredients) {
+//          randomizeArr(combinedIngredients);
+//      }   
+//      console.log(noDu)
+//  }
+
 var ingredientStr = '<ul>'
-    combinedIngredients.forEach(function(combinedIngredients){
-        var combinedIngredient = combinedIngredients.name;
+    backtoArray.forEach(function(ing){
+        var combinedIngredient = ing;
     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
-    ingredientStr += '</ul>'});
+    ingredientStr += '</ul>'
+    console.log("look herer" + combinedIngredient);
+});
+
+// var ingredientStr = '<ul>'
+//     combinedIngredients.forEach(function(combinedIngredients){
+//         var combinedIngredient = combinedIngredients.name;
+//     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
+//     ingredientStr += '</ul>'});
 
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
