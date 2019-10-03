@@ -146,6 +146,12 @@ button {
   background: #06D85F;
 }
 
+.count {
+  font-size: 10px; 
+  color: #FF6724;
+  margin-bottom: 5px;
+}
+
 .loserImgContainer {
   display: none; width: 50%;
     background-color: white;

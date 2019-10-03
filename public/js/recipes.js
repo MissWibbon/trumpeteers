@@ -976,6 +976,13 @@ var ingredientStr = '<ul>'
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
 
+// get ingredient count variable
+var ingredientCount = ingredients.length;
+var rightClickedCount = $('li.clickedRight').length;
+var ingredientsLeft = ingredientCount - rightClickedCount;
+$('.ingredientsLeft').text(ingredientsLeft);
+
+
     // stores the collected ingredients randomly
 var randomInstructions = randomizeArr(instructions);
 
