@@ -1,3 +1,5 @@
+//import { notStrictEqual } from "assert";
+
 var recipes = [
     {
         "recipe_name": "Rum Raisin Waffled French Toast",
@@ -919,6 +921,7 @@ var recipes = [
 ]
     ;
 
+
 var randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 
 var incorrectRandomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
@@ -932,9 +935,6 @@ console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
-var cookHours = randomRecipe.cookingHours;
-var cookMinutes = randomRecipe.cookingMinutes;
-
 var ingredients = randomRecipe.ingredients.sort(function () {
     return 0.5 - Math.random()
 });
@@ -990,7 +990,6 @@ $( ".ingredient" ).click(function() {
 var combinedIngredients = ingredients.concat(incorrectIngredients);
 
 var combinedIngredients = randomizeArr(combinedIngredients);
-Array.filter(combinedIngredients, ingredients) => Array.indexOf ((combinedIngredients) === ingredients)
 var ingredientStr = '<ul>'
     combinedIngredients.forEach(function(combinedIngredients){
         var combinedIngredient = combinedIngredients.name;
