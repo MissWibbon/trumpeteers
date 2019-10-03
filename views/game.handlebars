@@ -131,6 +131,7 @@ $(document).ready(function () {
                 else if (clickedIngredient !== object.name) {
                     elem.addClass('clickedWrong');
                     elem.addClass('clickedRight');
+
                 }
             }.bind(this));
             if (foundCorrect === true) {
@@ -138,6 +139,8 @@ $(document).ready(function () {
                 $('#winPoints').text(wins);
 
             } else {
+                $('.loserImgContainer').css('display', 'block');
+                $('.game').addClass('gamePause');
                 losses = losses + 1;
                 $('#losePoints').text(losses);
 
@@ -156,6 +159,11 @@ $(document).ready(function () {
             return status;
             console.log("Status returned: " + status)
             }
+            $("#closeImg").on('click', function () {
+                $('.loserImgContainer').css('display', 'none');
+                $('.game').removeClass('gamePause');
+
+            });
             /*if (status === "Exist") {
                 $(this).addClass('clickedRight');
                // console.log(this);
@@ -178,11 +186,7 @@ $(document).ready(function () {
 
 
     });
-     $("#closeImg").on('click', function () {
-        $('.loserImgContainer').css('display', 'none');
-        $('.game').removeClass('gamePause');
-
-    });
+     
 });*/
 
   </script>
