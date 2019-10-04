@@ -162,6 +162,18 @@ button {
     margin-bottom: 0px;
     font-weight: 500;
     color: #F62323;
+    width: 100px;
+    
+}
+.timeColon {
+  display: inline-block;
+  margin: 0px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #F62323;
+    width: 10px;
 }
 
 .count {

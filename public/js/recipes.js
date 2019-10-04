@@ -1,9 +1,12 @@
+//import { notStrictEqual } from "assert";
+
 var recipes = [
     {
         "recipe_name": "Rum Raisin Waffled French Toast",
         "image": "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2014/02/Rum-Raisin-Waffled-French-Toast-by-DessertForTwo-on-February-11-2014-410x273.jpg",
         "servingSize": "2",
-        "cookingMinutes": "00:15",
+        "cookingHours": "00",
+        "cookingMinutes": "15",
         "ingredients": [
             {
                 "name": "dark rum",
@@ -31,7 +34,8 @@ var recipes = [
         "recipe_name": "Spicy Salmon Roll",
         "image": "https://spoonacular.com/recipeImages/546314-556x370.jpeg",
         "servingSize": "1",
-        "cookingMinutes": "00:15",
+        "cookingHours": "00",
+        "cookingMinutes": "15",
         "ingredients": [
             {
                 "name": "salmon",
@@ -74,7 +78,8 @@ var recipes = [
         "recipe_name": "Crown Maple Bourbon Glazed Short Ribs",
         "image": "https://spoonacular.com/recipeImages/492775-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "02:15",
+        "cookingHours": "02",
+        "cookingMinutes": "15",
         "ingredients": [
             {
                 "name": "beef short ribs",
@@ -157,7 +162,8 @@ var recipes = [
         "recipe_name": "Olive Garden Chicken Scampi",
         "image": "https://spoonacular.com/recipeImages/599547-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "02:00",
+        "cookingHours": "02",
+        "cookingMinutes": "00",
         "ingredients": [
             {
                 "name": "chicken tenders",
@@ -185,7 +191,8 @@ var recipes = [
         "recipe_name": "Grilled Bacon Caramelized Onions",
         "image": "https://spoonacular.com/recipeImages/1012430-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "00:30",
+        "cookingHours": "00",
+        "cookingMinutes": "30",
         "ingredients": [
             {
                 "name": "vidalia onions",
@@ -216,7 +223,8 @@ var recipes = [
         "recipe_name": "Braised Pork Chops with Kale and Tomatoes",
         "image": "https://spoonacular.com/recipeImages/567822-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:35",
+        "cookingHours": "00",
+        "cookingMinutes": "35",
         "ingredients": [
             {
                 "name": "pork chops",
@@ -246,7 +254,8 @@ var recipes = [
         "recipe_name": "Sesame Crusted Mahi Mahi with Soy Shiso Ginger Butter Sauce",
         "image": "https://spoonacular.com/recipeImages/471724-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "00:35",
+        "cookingHours": "00",
+        "cookingMinutes": "35",
         "ingredients": [
             {
                 "name": "mahi mahi fillets",
@@ -277,7 +286,8 @@ var recipes = [
         "recipe_name": "Carnitas",
         "image": "https://spoonacular.com/recipeImages/517399-556x370.jpg",
         "servingSize": "10",
-        "cookingMinutes": "01:20",
+        "cookingHours": "01",
+        "cookingMinutes": "20",
         "ingredients": [
             {
                 "name": "corn tortillas",
@@ -308,7 +318,8 @@ var recipes = [
         "recipe_name": "Sausage Stuffed Portobello Mushrooms",
         "image": "https://spoonacular.com/recipeImages/987442-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:30",
+        "cookingHours": "00",
+        "cookingMinutes": "30",
         "ingredients": [
             {
                 "name": "ground sausage'",
@@ -338,7 +349,8 @@ var recipes = [
         "recipe_name": "Loaded Mashed Potato Cakes",
         "image": "https://spoonacular.com/recipeImages/423290-556x370.jpg",
         "servingSize": "8",
-        "cookingMinutes": "00:55",
+        "cookingHours": "00",
+        "cookingMinutes":"55",
         "ingredients": [
             {
                 "name": "potatoes",
@@ -372,7 +384,8 @@ var recipes = [
         "recipe_name": "Aji Guacamole",
         "image": "https://spoonacular.com/recipeImages/474626-556x370.jpg",
         "servingSize": "6",
-        "cookingMinutes": "00:05",
+        "cookingHours": "00",
+        "cookingMinutes": "05",
         "ingredients": [
             {
                 "name": "avocados",
@@ -402,7 +415,8 @@ var recipes = [
         "recipe_name": "Turkey Burgers",
         "image": "https://spoonacular.com/recipeImages/664011-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:45",
+        "cookingHours": "00",
+        "cookingMinutes": "45",
         "ingredients": [
             {
                 "name": "ground turkey",
@@ -432,7 +446,8 @@ var recipes = [
         "recipe_name": "Butter-Braised Carrots and Leeks",
         "image": "https://spoonacular.com/recipeImages/545911-556x370.jpeg",
         "servingSize": "8",
-        "cookingMinutes": "00:35",
+        "cookingHours": "00",
+        "cookingMinutes":"35",
         "ingredients": [
             {
                 "name": "leeks",
@@ -465,7 +480,8 @@ var recipes = [
         "recipe_name": "Spicy Turkish Tapenade",
         "image": "https://spoonacular.com/recipeImages/542186-556x370.jpg",
         "servingSize": "8",
-        "cookingMinutes": "00:15",
+        "cookingHours": "00",
+        "cookingMinutes": "15",
         "ingredients": [
             {
                 "name": "walnut halves",
@@ -496,7 +512,8 @@ var recipes = [
         "recipe_name": "Tater Tot Taco Casserole",
         "image": "https://neighborfoodblog.com/wp-content/uploads/2019/04/taco-tater-tot-casserole-3.jpg",
         "servingSize": "8",
-        "cookingMinutes": "01:10",
+        "cookingHours": "01",
+        "cookingMinutes": "10",
         "ingredients": [
             {
                 "name": "ground beef",
@@ -556,7 +573,8 @@ var recipes = [
         "recipe_name": "Steak Fajitas",
         "image": "https://spoonacular.com/recipeImages/798724-556x370.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:25",
+        "cookingHours": "00",
+        "cookingMinutes":"25",
         "ingredients": [
             {
                 "name": "steak",
@@ -639,7 +657,8 @@ var recipes = [
         "recipe_name": "Baked Mac and Cheese",
         "image": "https://images.media-allrecipes.com/userphotos/560x315/964194.jpg",
         "servingSize": "3",
-        "cookingMinutes": "00:50",
+        "cookingHours": "00",
+        "cookingMinutes": "50",
         "ingredients": [
             {
                 "name": "12 ounce macaroni package",
@@ -682,7 +701,8 @@ var recipes = [
         "recipe_name": "Pancakes",
         "image": "https://hips.hearstapps.com/ghk.h-cdn.co/assets/16/38/1474822198-how-to-make-pancakes.jpg",
         "servingSize": "3",
-        "cookingMinutes": "00:20",
+        "cookingHours": "00",
+        "cookingMinutes": "20",
         "ingredients": [
             {
                 "name": "flour",
@@ -737,7 +757,8 @@ var recipes = [
         "recipe_name": "Chicken Marsala",
         "image": "https://www.mantitlement.com/wp-content/uploads/2019/01/easy-creamy-chicken-marsala-recipe-single.jpg",
         "servingSize": "4",
-        "cookingMinutes": "00:30",
+        "cookingHours": "00",
+        "cookingMinutes": "30",
         "ingredients": [
             {
                 "name": "flour",
@@ -799,7 +820,8 @@ var recipes = [
         "recipe_name": "Thanksgiving Turkey and Gravy",
         "image": "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Marinated-Thanksgiving-Turkey_EXPS_THN17_1316_B06_15_5b.jpg",
         "servingSize": "16",
-        "cookingMinutes": "04:55",
+        "cookingHours": "04",
+        "cookingMinutes": "55",
         "ingredients": [
             {
                 "name": "salt",
@@ -899,6 +921,7 @@ var recipes = [
 ]
     ;
 
+
 var randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 
 var incorrectRandomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
@@ -912,6 +935,9 @@ console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
+var cookHours = randomRecipe.cookingHours;
+var cookMinutes = randomRecipe.cookingMinutes;
+
 var ingredients = randomRecipe.ingredients.sort(function () {
     return 0.5 - Math.random()
 });
@@ -947,8 +973,6 @@ function randomizeArr(arr) {
     return newArr;
 }
 
-
-
 // var incorrectIngredientStr = '<ul>'
 //     incorrectIngredients.forEach(function(incorrectIngredient){
 //     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
@@ -958,20 +982,54 @@ function randomizeArr(arr) {
 document.getElementById("ingredients").innerHTML = ingredientStr;
 $( ".ingredient" ).click(function() {
     var clickedIngredient = $(this).text();
-    console.log(clickedIngredient);
+    //console.log(clickedIngredient);
     
     if (clickedIngredient == ingredients[0].name)
     $(this).addClass('correct-ingredient');
     
 });
+
 var combinedIngredients = ingredients.concat(incorrectIngredients);
 
 var combinedIngredients = randomizeArr(combinedIngredients);
+
+var allIngredientNames = [];
+for (let index = 0; index < combinedIngredients.length; index++) {
+    allIngredientNames.push(combinedIngredients[index].name);
+}
+
+allIngredientNames.forEach(function(ingName){
+    //console.log("item:" + ingName)
+})
+
+ var noDuplicateIngredients = new Set(allIngredientNames);
+ var backtoArray = [...noDuplicateIngredients];
+ //console.log("testing" + backtoArray);
+ //console.log("ingre" + noDuplicateIngredients);
+//  combinedIngredients.filter(); {
+//      console.log(item, index, array.indexOf(item), array.indexOf(item) === index);
+//  };
+
+//  var noDuplicates = function() {
+//      if (combinedIngredients = ingredients) {
+//          randomizeArr(combinedIngredients);
+//      }   
+//      console.log(noDu)
+//  }
+
 var ingredientStr = '<ul>'
-    combinedIngredients.forEach(function(combinedIngredients){
-        var combinedIngredient = combinedIngredients.name;
+    backtoArray.forEach(function(ing){
+        var combinedIngredient = ing;
     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
-    ingredientStr += '</ul>'});
+    ingredientStr += '</ul>'
+    console.log("look herer" + combinedIngredient);
+});
+
+// var ingredientStr = '<ul>'
+//     combinedIngredients.forEach(function(combinedIngredients){
+//         var combinedIngredient = combinedIngredients.name;
+//     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
+//     ingredientStr += '</ul>'});
 
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
