@@ -3,14 +3,15 @@
 
 //var time = require("./recipes.js");
 
+var isProcessing = false
+var userGuessHour = document.getElementById("hours").value;
+var userGuessMinute = document.getElementById("minutes").value;
 var cookHours = randomRecipe.cookingHours;
 var cookMinutes = randomRecipe.cookingMinutes;
 //var timer = $("#cookTimeGuess").val().trim();
 var guessesLeft = 5;
-var wins = 0;
-var losses = 0;
-var userGuessHour = document.getElementById("hours").value;
-var userGuessMinute = document.getElementById("minutes").value;
+var timerWins = 5;
+var timerLosses = 1;
 //var userGuess = userGuessHour + userGuessMinute;
 console.log(cookHours);
 console.log(cookMinutes);
@@ -27,11 +28,20 @@ document
 .getElementById("minutes")
 .addEventListener("keypress", function(event) {
   if (event.keyCode == 13) {
-    console.log(userGuessMinute);
+    var userGuessHour = document.getElementById("hours").value;
+    var userGuessMinute = document.getElementById("minutes").value;
+        if (isProcessing === false) {
+            handleTime(userGuessHour, userGuessMinute)
+            isProcessing = true
+        } else {
+          isProcessing = false
+          return 
+        }
     console.log(userGuessHour);
+    console.log(userGuessMinute);
     //console.log(userGuess);
-    handleTime();
-   
+   // handleTime(userGuessHour, userGuessMinute);
+ 
       // console.log("entered");
       //event.preventDefault();
       //console.log(event);
@@ -39,27 +49,26 @@ document
 
       //event.submit();
     }
+ 
   });
 
-function handleTime() {
-  //alert("clicked");
-  //guessesLeft--;
-  //guessesLeft();
-console.log(wins);
+function handleTime(userGuessHour, userGuessMinute) {
+console.log(timerWins);
   if (cookHours === userGuessHour && cookMinutes === userGuessMinute) {
-      console.timeLog(cookHours);
-      console.log(cookMinutes);
+     // console.log(cookHours);
+      //console.log(cookMinutes);
 
     console.log("CONGRATULATIONS!");
-    document.querySelector("#winPoints").innerHTML = wins;
-    wins++;
+    document.querySelector("#winPoints").innerHTML = timerWins;
+    timerWins++;
     stopInput();
     // add points leftover from 5
   } else {
     guessesLeft--;
     console.log("try again");
-    document.querySelector("#losePoints").innerHTML = losses;
-    losses++;
+    document.querySelector("#losePoints").innerHTML = timerLosses;
+    timerLosses++;
+    timerWins--;
   }
   if (guessesLeft === 0) {
     stopInput();

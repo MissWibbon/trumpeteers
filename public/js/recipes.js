@@ -322,7 +322,7 @@ var recipes = [
         "cookingMinutes": "30",
         "ingredients": [
             {
-                "name": "ground sausage'",
+                "name": "ground sausage",
                 "quantity": "2 lbs ground sausage (regular breakfast sausage or Italian)"
             },
             {
@@ -1022,7 +1022,7 @@ var ingredientStr = '<ul>'
         var combinedIngredient = ing;
     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
     ingredientStr += '</ul>'
-    console.log("look herer" + combinedIngredient);
+   // console.log("look here" + combinedIngredient);
 });
 
 // var ingredientStr = '<ul>'
