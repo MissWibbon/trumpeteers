@@ -935,6 +935,9 @@ console.log("incorrect recipe: " + incorrectRandomRecipe.recipe_name);
 var recipeName = randomRecipe.recipe_name;
 var serveringSize = randomRecipe.servingSize;
 var recipeImg = randomRecipe.image;
+var cookHours = randomRecipe.cookingHours;
+var cookMinutes = randomRecipe.cookingMinutes;
+
 var ingredients = randomRecipe.ingredients.sort(function () {
     return 0.5 - Math.random()
 });

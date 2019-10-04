@@ -60,9 +60,23 @@
                     <div class="card mt-4">
                         <div class="card-body">
                             <p id="cookTimeGuess">
-                                <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div><div id="minutes" class="timeClock">00</div>
+                                {{!-- <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div>
+                                <div id="minutes" class="timeClock">00</div> --}}
+
+                                <input type="text" id="hours" class="timeClock"  placeholder="00" pattern="\d" maxlength="2" ></input>
+                                <div id="timeColon" class="timeColon">:</div>
+                                <input type="text" id="minutes" class="timeClock" placeholder="00"  pattern="\d" maxlength="2" ></input>
+                        
                             </p>
                              
+                              {{!-- <input id= "cookTimeGuess" type= "text"  placeholder="00:00" pattern="\d" 
+                              maxlength="4" style="background-color: #2E2929; text-align: 
+                            center; font-size: 35px; margin-bottom: 0px; font-weight:500; 
+                            color:#F62323;"></input> --}}
+
+                     {{!-- <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div>
+                                <div id="minutes" class="timeClock">00</div> --}}
+
                         </div>
                     </div>
                     <!--QuiteGame-->
