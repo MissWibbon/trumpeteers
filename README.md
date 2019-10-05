@@ -1,38 +1,16 @@
-# Project Starter
+# Impressing Gordon Ramsay
 
-In this activity we will add the provided boilerplate to group project repos.
+An activity to test your knowledge on ingredients, instructions, and cooktimes for a large range of recipes.
 
 ## Instructions
 
-* Only one member of each group should complete this activity while the others watch.
+* Each time you play you are assigned a recipe by Gordon Ramsay.
 
-* Copy the entire [Unsolved](Unsolved) folder to another location on your computers &mdash; wherever you would like your local copy of the group project to be.
+* For each correct ingredient you select, you will recieve a point towards you. If you click the wrong ingredient, a point will strike against you.
 
-* Rename the copied "Unsolved" folder to the name of your project.
+* The instructions are arranged in a random order, it is up to you to put them right by dragging them to their original index.
 
-* Open the copied project folder's `package.json` file and change its `name` property to the name of your project.
+* There is a defined cook time in hours and minutes for each recipe. You have 5 guesses to get it right.
 
 * CD to the root of the copied project folder with your terminal and run the following commands:
 
-  ```
-  git init
-  git add .
-  git commit -m "Initial commit"
-  ```
-
-* Then copy the GitHub repo's remote SSH URL (the same URL you'd use to clone the repo).
-
-* Run the following commands in your terminal, replacing <remote-url> with your GitHub repo's remote SSH URL.
-
-  ```
-  git remote add origin <remote-url>
-  git push origin master
-  ```
-
-* If completed successfully you should see all of the files uploaded to GitHub.
-
-* All other group members should now clone the repo.
-
-* Discuss as a group:
-
-  * How would you now add changes to this project?
