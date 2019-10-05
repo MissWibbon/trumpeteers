@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
 var isProcessing = false
 var userGuessHour = document.getElementById("hours").value;
 var userGuessMinute = document.getElementById("minutes").value;
 var cookHours = randomRecipe.cookingHours;
 var cookMinutes = randomRecipe.cookingMinutes;
-<<<<<<< HEAD
 ​
 var guessesLeft = 5;
 //var timerWins = 5;
@@ -16,26 +11,12 @@ var guessesLeft = 5;
 console.log(cookHours);
 console.log(cookMinutes);
 ​
-=======
-
-var guessesLeft = 5;
-//var timerWins = 5;
-//var timerLosses = 1;
-
-console.log(cookHours);
-console.log(cookMinutes);
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
 //stopping user from inputting more information after they've guessed 5 times
 var stopInput = function() {
   document.getElementById("hours").disabled = true;
   document.getElementById("minutes").disabled = true;
 };
-<<<<<<< HEAD
 ​
-=======
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
 //submit on press enter
 document
 .getElementById("minutes")
@@ -81,9 +62,5 @@ function handleTime(userGuessHour, userGuessMinute) {
     stopInput();
   }
 }
-<<<<<<< HEAD
 ​
 Collaps
-=======
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89

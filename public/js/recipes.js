@@ -986,35 +986,12 @@ $( ".ingredient" ).click(function() {
 var combinedIngredients = ingredients.concat(incorrectIngredients);
 
 var combinedIngredients = randomizeArr(combinedIngredients);
-<<<<<<< HEAD
 var ingredientStr = '<ul id="sortable">'
     combinedIngredients.forEach(function(combinedIngredients){
         var combinedIngredient = combinedIngredients.name;
     ingredientStr += '<li class="ingredient ui-state-default">' + combinedIngredient + '</li>';
     ingredientStr += '</ul>'});
 
-=======
-
-var allIngredientNames = [];
-for (let index = 0; index < combinedIngredients.length; index++) {
-    allIngredientNames.push(combinedIngredients[index].name);
-}
-
-allIngredientNames.forEach(function(ingName){
-    //console.log("item:" + ingName)
-})
-
- var noDuplicateIngredients = new Set(allIngredientNames);
- var backtoArray = [...noDuplicateIngredients];
-
-var ingredientStr = '<ul>'
-    backtoArray.forEach(function(ing){
-        var combinedIngredient = ing;
-    ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
-    ingredientStr += '</ul>'
-   // console.log("look here" + combinedIngredient);
-});
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
 
