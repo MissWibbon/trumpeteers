@@ -55,30 +55,18 @@ document
     }
  
   });
-<<<<<<< HEAD
 ​
 function handleTime(userGuessHour, userGuessMinute) {
 ​
   if (cookHours === userGuessHour && cookMinutes === userGuessMinute) {
 ​
-=======
-
-function handleTime(userGuessHour, userGuessMinute) {
-
-  if (cookHours === userGuessHour && cookMinutes === userGuessMinute) {
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
     console.log("CONGRATULATIONS!");
     //document.querySelector("#winPoints").innerHTML = timerWins;
    // timerWins++;
  
    $('#cookTimeGuess').addClass('clickedRight');
     stopInput();
-<<<<<<< HEAD
 ​
-=======
-
->>>>>>> a88975b705c8ddf67bdeb1296f5f9283129b0c89
   
   } else {
     guessesLeft--;
