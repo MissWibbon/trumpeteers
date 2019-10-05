@@ -151,7 +151,7 @@ button {
   font-size: 35px; 
   margin-bottom: 0px; 
   font-weight:500; 
-  color:#F62323; 
+  /* color:#F62323;  */
 }
 
 .timeClock {
@@ -169,7 +169,7 @@ button {
     padding-right: 10%; */
     
 }
-.timeColon {
+/* .timeColon {
   display: inline-block;
   margin: 0px;
     text-align: center;
@@ -178,7 +178,7 @@ button {
     font-weight: 500;
     color: #F62323;
     width: 5%;
-}
+} */
 
 .count {
   font-size: 10px; 
