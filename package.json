@@ -8,6 +8,7 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.1.0",
+    "draggable": "^4.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.16.2",
@@ -16,7 +17,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.19.1",
-    "session": "^0.1.0"
+    "session": "^0.1.0",
+    "sortablejs": "^1.10.1"
   },
   "devDependencies": {},
   "scripts": {

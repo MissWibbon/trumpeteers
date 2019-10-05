@@ -1,5 +1,12 @@
       <script src="https://kit.fontawesome.com/ebc38b1b2c.js" crossorigin="anonymous"></script>
-
+ <script>
+  $( function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
   <div class="loserImgContainer">
 
         <i class="fas fa-times-circle" id="closeImg"></i>
@@ -42,7 +49,7 @@
                     <div class="card mt-4">
                         <div class="card-body instructions-wrapper" id="droppable">
                     <h5>Instructions</h5>
-                            <ul id="instructions" style="overflow-y: scroll; max-height: 300px;">
+                            <ul class="instructions" id="sortable" style="overflow-y: scroll; max-height: 300px;">
                             </ul>  
                         </div>
                     </div>
@@ -56,12 +63,19 @@
         <div class="container">
                     
                     <!--CookTime-->
-                    <h5 style="margin-top: 20px;">Cooking Time:</h5><div id="submitTime">Guess Time</div>
+                    <h5 style="margin-top: 5px !Important;">Cooking Time:</h5><div id="submitTime" style="color: #FF6724; text-align: center;">Guess Time</div>
+                    <div class="row">
+                        <div class="col" style="color:#FF6724; text-align: center;">Hours</div><div class="col" style="color:#FF6724; text-align: center;">minutes</div>
+                    </div>
                     <div class="card mt-4">
                         <div class="card-body">
                             <p id="cookTimeGuess">
-                                <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div><div id="minutes" class="timeClock">00</div>
-                            </p>
+                               {{!-- <div id="hours" class="timeClock">00</div><div id="timeColon" class="timeClock">:</div>
+                               <div id="minutes" class="timeClock">00</div> --}}
+                               <input type="text" id="hours" class="timeClock"  placeholder="00" pattern="\d" maxlength="2" ></input>
+                               <div id="timeColon" class="timeClock">:</div>
+                               <input type="text" id="minutes" class="timeClock" placeholder="00"  pattern="\d" maxlength="2" ></input>
+                           </p>
                              
                         </div>
                     </div>
@@ -101,6 +115,7 @@ $(document).ready(function () {
      var ingredient = $('.ingredient');
      
      $('.ingredient').on('click', function(){
+        
         var loseImage = getRandomItem(loseImages).img;
         var loseAudio = getRandomAudio();
         console.log(loseImage);
@@ -109,19 +124,18 @@ $(document).ready(function () {
         document.querySelector('#loserImg').setAttribute('src', loseImage);
         var audio = getRandomItem(loseAudio)
         document.querySelector('#loserAudio').setAttribute('src', loseAudio);
-        var playAudio = $('#loserAudio');
-         var elem = $(this);
-         var clickedIngredient = $(this).text();
-         var foundCorrect = false;
+        
+        var elem = $(this);
+        var clickedIngredient = $(this).text();
+        var foundCorrect = false;
 
         checkValue(clickedIngredient, elem);
 
-          console.log(clickedIngredient)
-         function checkValue(value,arr){
+        console.log(clickedIngredient)
+        function checkValue(value,arr){
             var status = 'Not exist';
             var rightClickedCount = $('.clickedRight .ingredient').length;
             var ingredientExist = ingredients.includes(clickedIngredient);
-            console.log(ingredientExist);
             
             $.each(ingredients, function( key, object){
                 if (foundCorrect === true) return false;
@@ -133,7 +147,6 @@ $(document).ready(function () {
                     //$(this).addClass('clickedRight');
                     foundCorrect = true;
                     //wins =+ wins + 1;
-                    console.log(wins);
                     // get ingredient count variable
                     var ingredientCount = ingredients.length;
                     var rightClickedCount = $('li.clickedRight').length;
@@ -160,7 +173,6 @@ $(document).ready(function () {
                 $('#losePoints').text(losses);
 
             }
-            console.log(this);
 
             /*for(var i=0; i<arr.length; i++){
                 var name = arr[i].name;
@@ -190,6 +202,10 @@ $(document).ready(function () {
      });
     
 });
+
+
+
+
 /*$(document).ready(function () {
     $(".incorrect-ingredient").on('click', function () {
         $(this).addClass('clickedWrong');

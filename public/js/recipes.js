@@ -967,10 +967,10 @@ $( ".ingredient" ).click(function() {
 var combinedIngredients = ingredients.concat(incorrectIngredients);
 
 var combinedIngredients = randomizeArr(combinedIngredients);
-var ingredientStr = '<ul>'
+var ingredientStr = '<ul id="sortable">'
     combinedIngredients.forEach(function(combinedIngredients){
         var combinedIngredient = combinedIngredients.name;
-    ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
+    ingredientStr += '<li class="ingredient ui-state-default">' + combinedIngredient + '</li>';
     ingredientStr += '</ul>'});
 
 
@@ -986,13 +986,13 @@ $('.ingredientsLeft').text(ingredientsLeft);
     // stores the collected ingredients randomly
 var randomInstructions = randomizeArr(instructions);
 
-var instructionStr = '<ul>'
+var instructionStr = '<ul id="sortable">'
     randomInstructions.forEach(function(instruction){
-    instructionStr += '<li class="instruction" id="draggable" draggable="true">' + instruction + '</li>';
+    instructionStr += '<li class="instruction ui-state-default" id="draggable" draggable="true">' + instruction + '</li>';
     instructionStr += '</ul>';
 });
 
-document.getElementById("instructions").innerHTML = instructionStr;
+document.querySelector(".instructions").innerHTML = instructionStr;
 
 
 // Drag instructions

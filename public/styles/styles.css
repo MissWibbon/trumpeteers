@@ -34,8 +34,9 @@ ul {
   margin-bottom: 0px;
 }
 
-li {
+li , .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   list-style: none;
+  border: none;
   color: #F62323;
   font-weight: 300;
   margin-bottom: 5px;
@@ -119,6 +120,8 @@ button {
   margin-right: -7px;
   margin-top: -7px;
   cursor: pointer;
+  border-radius: 100%;
+  margin-bottom: 10px;
 }
 
 .box {
@@ -146,15 +149,14 @@ button {
   background: #06D85F;
 }
 #cookTimeGuess {
-  background-color: #2E2929; 
-  text-align: center; 
-  font-size: 35px; 
-  margin-bottom: 0px; 
-  font-weight:500; 
-  color:#F62323;
-}
-
-.timeClock {
+  background-color: #2E2929;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 0px;
+  font-weight:500;
+  /* color:#F62323;  */
+ }
+ .timeClock {
   display: inline-block;
   margin: 0px;
     text-align: center;
@@ -162,17 +164,23 @@ button {
     margin-bottom: 0px;
     font-weight: 500;
     color: #F62323;
-}
+    float: left;
+    width: 33%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+ }
 
 .count {
   font-size: 10px; 
   color: #FF6724;
   margin-bottom: 5px;
 }
-
+#loserImg{
+  box-shadow: 5px 5px 20px #1A1414;
+  border-radius: 5px;
+}
 .loserImgContainer {
   display: none; width: 50%;
-    background-color: white;
     margin-top: 30px;
     position: fixed;
     margin-left: 25%;
@@ -181,7 +189,6 @@ button {
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    box-shadow: 5px 5px 20px #1A1414;
 
 }
 
