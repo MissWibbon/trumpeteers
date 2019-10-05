@@ -322,7 +322,7 @@ var recipes = [
         "cookingMinutes": "30",
         "ingredients": [
             {
-                "name": "ground sausage'",
+                "name": "ground sausage",
                 "quantity": "2 lbs ground sausage (regular breakfast sausage or Italian)"
             },
             {
@@ -973,12 +973,6 @@ function randomizeArr(arr) {
     return newArr;
 }
 
-// var incorrectIngredientStr = '<ul>'
-//     incorrectIngredients.forEach(function(incorrectIngredient){
-//     incorrectIngredientStr += '<li class="incorrect-ingredient">' + incorrectIngredient.name + '</li>';
-//     incorrectIngredientStr += '</ul>';
-
-// });
 document.getElementById("ingredients").innerHTML = ingredientStr;
 $( ".ingredient" ).click(function() {
     var clickedIngredient = $(this).text();
@@ -1004,33 +998,14 @@ allIngredientNames.forEach(function(ingName){
 
  var noDuplicateIngredients = new Set(allIngredientNames);
  var backtoArray = [...noDuplicateIngredients];
- //console.log("testing" + backtoArray);
- //console.log("ingre" + noDuplicateIngredients);
-//  combinedIngredients.filter(); {
-//      console.log(item, index, array.indexOf(item), array.indexOf(item) === index);
-//  };
-
-//  var noDuplicates = function() {
-//      if (combinedIngredients = ingredients) {
-//          randomizeArr(combinedIngredients);
-//      }   
-//      console.log(noDu)
-//  }
 
 var ingredientStr = '<ul>'
     backtoArray.forEach(function(ing){
         var combinedIngredient = ing;
     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
     ingredientStr += '</ul>'
-    console.log("look herer" + combinedIngredient);
+   // console.log("look here" + combinedIngredient);
 });
-
-// var ingredientStr = '<ul>'
-//     combinedIngredients.forEach(function(combinedIngredients){
-//         var combinedIngredient = combinedIngredients.name;
-//     ingredientStr += '<li class="ingredient">' + combinedIngredient + '</li>';
-//     ingredientStr += '</ul>'});
-
 
     document.getElementById("ingredients").innerHTML = ingredientStr;
 

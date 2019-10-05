@@ -104,7 +104,7 @@ button {
   color: #1A1414;
 }
 
-#winPoints, #losePoints {
+#winPoints, #losePoints, #submitTime {
   color: #FF6724;
 }
 
@@ -151,7 +151,7 @@ button {
   font-size: 35px; 
   margin-bottom: 0px; 
   font-weight:500; 
-  color:#F62323;
+  /* color:#F62323;  */
 }
 
 .timeClock {
@@ -162,10 +162,14 @@ button {
     margin-bottom: 0px;
     font-weight: 500;
     color: #F62323;
-    width: 100px;
+    float: left;
+    width: 33%;
+   
+    /* padding-left: 10%;
+    padding-right: 10%; */
     
 }
-.timeColon {
+/* .timeColon {
   display: inline-block;
   margin: 0px;
     text-align: center;
@@ -173,8 +177,8 @@ button {
     margin-bottom: 0px;
     font-weight: 500;
     color: #F62323;
-    width: 10px;
-}
+    width: 5%;
+} */
 
 .count {
   font-size: 10px; 
